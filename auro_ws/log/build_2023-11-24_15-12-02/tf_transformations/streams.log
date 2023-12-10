@@ -1,0 +1,19 @@
+[3.509s] Invoking command in '/home/userfs/d/ds1473/AURO/auro_ws/build/tf_transformations': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/tf_transformations/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/tf_transformations/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/AURO/auro_ws/build/tf_transformations/build --no-deps install_data
+[5.387s] running develop
+[5.387s] running egg_info
+[5.387s] writing tf_transformations.egg-info/PKG-INFO
+[5.387s] writing dependency_links to tf_transformations.egg-info/dependency_links.txt
+[5.387s] writing requirements to tf_transformations.egg-info/requires.txt
+[5.387s] writing top-level names to tf_transformations.egg-info/top_level.txt
+[5.387s] reading manifest file 'tf_transformations.egg-info/SOURCES.txt'
+[5.387s] writing manifest file 'tf_transformations.egg-info/SOURCES.txt'
+[5.387s] running build_ext
+[5.387s] Creating /home/userfs/d/ds1473/AURO/auro_ws/install/tf_transformations/lib/python3.10/site-packages/tf-transformations.egg-link (link to .)
+[5.388s] 
+[5.388s] Installed /home/userfs/d/ds1473/AURO/auro_ws/build/tf_transformations
+[5.388s] running install_data
+[5.388s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.388s]   warnings.warn(
+[5.388s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.389s]   warnings.warn(
+[5.404s] Invoked command in '/home/userfs/d/ds1473/AURO/auro_ws/build/tf_transformations' returned '0': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/tf_transformations/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/tf_transformations/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/AURO/auro_ws/build/tf_transformations/build --no-deps install_data

@@ -1,0 +1,21 @@
+[1.384s] Invoking command in '/home/userfs/d/ds1473/AURO/week3_ws/build/week_3': PYTHONPATH=/home/userfs/d/ds1473/AURO/week3_ws/build/week_3/prefix_override:/home/userfs/d/ds1473/AURO/week3_ws/install/week_3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/AURO/week3_ws/build/week_3/build --no-deps install_data
+[1.737s] running develop
+[1.738s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.738s]   warnings.warn(
+[1.739s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.739s]   warnings.warn(
+[2.012s] running egg_info
+[2.013s] writing week_3.egg-info/PKG-INFO
+[2.015s] writing dependency_links to week_3.egg-info/dependency_links.txt
+[2.017s] writing entry points to week_3.egg-info/entry_points.txt
+[2.019s] writing requirements to week_3.egg-info/requires.txt
+[2.020s] writing top-level names to week_3.egg-info/top_level.txt
+[2.027s] reading manifest file 'week_3.egg-info/SOURCES.txt'
+[2.029s] writing manifest file 'week_3.egg-info/SOURCES.txt'
+[2.068s] running build_ext
+[2.069s] Creating /home/userfs/d/ds1473/AURO/week3_ws/install/week_3/lib/python3.10/site-packages/week-3.egg-link (link to .)
+[2.073s] Installing turtlebot3_fsm = week_3.turtlebot3_fsm:mainturtlebot3_random script to /home/userfs/d/ds1473/AURO/week3_ws/install/week_3/lib/week_3
+[2.076s] 
+[2.076s] Installed /home/userfs/d/ds1473/AURO/week3_ws/build/week_3
+[2.077s] running install_data
+[2.120s] Invoked command in '/home/userfs/d/ds1473/AURO/week3_ws/build/week_3' returned '0': PYTHONPATH=/home/userfs/d/ds1473/AURO/week3_ws/build/week_3/prefix_override:/home/userfs/d/ds1473/AURO/week3_ws/install/week_3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/AURO/week3_ws/build/week_3/build --no-deps install_data

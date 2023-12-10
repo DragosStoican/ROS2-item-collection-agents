@@ -1,0 +1,3 @@
+[console_scripts]
+robot_controller = solution.robot_controller:main
+

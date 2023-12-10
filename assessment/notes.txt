@@ -1,0 +1,37 @@
+All robots should publish known location of clusters
+-> /clusters topic sau service sau ceva de genu
+
+/Clusters should be used somehow to create the nav map of the robots
+
+Make robotx/holding_item topic/service/whatever
+
+Think about a service and/or action to create
+
+You will need some topic or something to organize which robot goes for which color
+
+
+There is a random noise arg, test with that enabled
+
+BEFORE SUBMITTING make sure the original files are not modified!!
+Is it ok to change the launch files?? No just use the solution package like he said
+Do we have to build it in such a way that it works with any nr of robots?
+
+
+Collecting waypoints should be global
+They should be able to calculate points/second and decide which waypoint to go for
+Add a waypoint for passing the grid location where obstacles are so that they make way for eachother
+
+
+ROBOTController:
+STATE1: Navigate to the last waypoint (a collect waypoint)
+State2: Pick up item
+STATEx: Navigate back to the first waypoint
+
+
+How do I balance between a sophisticated solution and a performance solution
+
+What makes items not detectable via lidar?
+Persistant storage?
+Why is the nav2 launch broken and the cameras don't work?
+How do I show the camera in gazeebo?
+How do I make robotcontroller node wait for all items to spawn before starting?

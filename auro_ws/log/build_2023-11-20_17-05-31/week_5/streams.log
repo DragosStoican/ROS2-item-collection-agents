@@ -1,0 +1,33 @@
+[4.393s] Invoking command in '/home/userfs/d/ds1473/AURO/auro_ws/build/week_5': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/week_5/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/week_5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/AURO/auro_ws/build/week_5/build --no-deps install_data
+[4.731s] running develop
+[4.731s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.731s]   warnings.warn(
+[4.733s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.733s]   warnings.warn(
+[5.009s] running egg_info
+[5.009s] creating week_5.egg-info
+[5.011s] writing week_5.egg-info/PKG-INFO
+[5.015s] writing dependency_links to week_5.egg-info/dependency_links.txt
+[5.018s] writing entry points to week_5.egg-info/entry_points.txt
+[5.020s] writing requirements to week_5.egg-info/requires.txt
+[5.022s] writing top-level names to week_5.egg-info/top_level.txt
+[5.027s] writing manifest file 'week_5.egg-info/SOURCES.txt'
+[5.035s] reading manifest file 'week_5.egg-info/SOURCES.txt'
+[5.037s] writing manifest file 'week_5.egg-info/SOURCES.txt'
+[5.073s] running build_ext
+[5.073s] Creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/lib/python3.10/site-packages/week-5.egg-link (link to .)
+[5.079s] Installing item_detector script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/lib/week_5
+[5.083s] Installing item_spawner script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/lib/week_5
+[5.087s] 
+[5.088s] Installed /home/userfs/d/ds1473/AURO/auro_ws/build/week_5
+[5.092s] running install_data
+[5.093s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/share/ament_index
+[5.094s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/share/ament_index/resource_index
+[5.095s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/share/ament_index/resource_index/packages
+[5.097s] copying resource/week_5 -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/share/ament_index/resource_index/packages
+[5.101s] copying package.xml -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/share/week_5
+[5.107s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/share/week_5/models
+[5.107s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/share/week_5/models/item
+[5.107s] copying models/item/model.config -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/share/week_5/models/item
+[5.110s] copying models/item/model.sdf -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/share/week_5/models/item
+[5.624s] Invoked command in '/home/userfs/d/ds1473/AURO/auro_ws/build/week_5' returned '0': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/week_5/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/week_5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/AURO/auro_ws/build/week_5/build --no-deps install_data

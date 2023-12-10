@@ -1,0 +1,11 @@
+What does the yaw value actually mean? How do I translate that do angles?
+
+How do I visualize the odometry in RVizz or Gazebo?
+
+In the assessment, do we have to design a "safe", like identifying faults and mitigating their effects?
+What are the links in gazeebo?
+
+There are a lot of interfaces in the assessment code... Are we expected to create more or is the marking criteria reffering to those?
+
+Why use encoders for odometry instead of world coords?
+

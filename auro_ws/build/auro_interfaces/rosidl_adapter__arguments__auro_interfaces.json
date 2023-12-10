@@ -1,0 +1,8 @@
+{
+  "package_name": "auro_interfaces",
+  "non_idl_tuples": [
+    "/home/userfs/d/ds1473/AURO/auro_ws/src/auro_interfaces:msg/StringWithPose.msg",
+    "/home/userfs/d/ds1473/AURO/auro_ws/src/auro_interfaces:msg/Item.msg",
+    "/home/userfs/d/ds1473/AURO/auro_ws/src/auro_interfaces:msg/ItemList.msg"
+  ]
+}

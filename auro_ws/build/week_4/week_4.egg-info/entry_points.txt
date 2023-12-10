@@ -1,0 +1,3 @@
+[console_scripts]
+robot_controller = week_4.robot_controller:main
+

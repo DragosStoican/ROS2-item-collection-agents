@@ -1,0 +1,30 @@
+running develop
+running egg_info
+creating week_4.egg-info
+writing week_4.egg-info/PKG-INFO
+writing dependency_links to week_4.egg-info/dependency_links.txt
+writing entry points to week_4.egg-info/entry_points.txt
+writing requirements to week_4.egg-info/requires.txt
+writing top-level names to week_4.egg-info/top_level.txt
+writing manifest file 'week_4.egg-info/SOURCES.txt'
+reading manifest file 'week_4.egg-info/SOURCES.txt'
+writing manifest file 'week_4.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/lib/python3.10/site-packages/week-4.egg-link (link to .)
+Installing robot_controller script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/lib/week_4
+
+Installed /home/userfs/d/ds1473/AURO/auro_ws/build/week_4
+running install_data
+creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/ament_index
+creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/ament_index/resource_index
+creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/ament_index/resource_index/packages
+copying resource/week_4 -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/ament_index/resource_index/packages
+copying package.xml -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/week_4
+creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/week_4/models
+creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/week_4/models/week_4_world
+copying models/week_4_world/model.config -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/week_4/models/week_4_world
+copying models/week_4_world/model.sdf -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/week_4/models/week_4_world
+creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/week_4/launch
+copying launch/week_4_launch.py -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/week_4/launch/
+creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/week_4/worlds
+copying worlds/week_4_world.world -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_4/share/week_4/worlds/

@@ -1,0 +1,29 @@
+[2.050s] Invoking command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclpy_minimal_service': PYTHONPATH=/home/userfs/d/ds1473/ros2_ws/build/examples_rclpy_minimal_service/prefix_override:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/ros2_ws/build/examples_rclpy_minimal_service/build --no-deps install_data
+[2.362s] running develop
+[2.362s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.362s]   warnings.warn(
+[2.364s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.364s]   warnings.warn(
+[2.693s] running egg_info
+[2.694s] creating examples_rclpy_minimal_service.egg-info
+[2.695s] writing examples_rclpy_minimal_service.egg-info/PKG-INFO
+[2.699s] writing dependency_links to examples_rclpy_minimal_service.egg-info/dependency_links.txt
+[2.701s] writing entry points to examples_rclpy_minimal_service.egg-info/entry_points.txt
+[2.703s] writing requirements to examples_rclpy_minimal_service.egg-info/requires.txt
+[2.705s] writing top-level names to examples_rclpy_minimal_service.egg-info/top_level.txt
+[2.708s] writing manifest file 'examples_rclpy_minimal_service.egg-info/SOURCES.txt'
+[2.716s] reading manifest file 'examples_rclpy_minimal_service.egg-info/SOURCES.txt'
+[2.718s] writing manifest file 'examples_rclpy_minimal_service.egg-info/SOURCES.txt'
+[2.757s] running build_ext
+[2.757s] Creating /home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages/examples-rclpy-minimal-service.egg-link (link to .)
+[2.762s] Installing service script to /home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service/lib/examples_rclpy_minimal_service
+[2.765s] Installing service_member_function script to /home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service/lib/examples_rclpy_minimal_service
+[2.770s] 
+[2.770s] Installed /home/userfs/d/ds1473/ros2_ws/build/examples_rclpy_minimal_service
+[2.771s] running install_data
+[2.771s] creating /home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service/share/ament_index
+[2.772s] creating /home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service/share/ament_index/resource_index
+[2.773s] creating /home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service/share/ament_index/resource_index/packages
+[2.775s] copying resource/examples_rclpy_minimal_service -> /home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service/share/ament_index/resource_index/packages
+[2.778s] copying package.xml -> /home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service/share/examples_rclpy_minimal_service
+[2.828s] Invoked command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclpy_minimal_service' returned '0': PYTHONPATH=/home/userfs/d/ds1473/ros2_ws/build/examples_rclpy_minimal_service/prefix_override:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/ros2_ws/build/examples_rclpy_minimal_service/build --no-deps install_data

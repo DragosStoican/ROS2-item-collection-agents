@@ -1,0 +1,26 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating week_2.egg-info
+writing week_2.egg-info/PKG-INFO
+writing dependency_links to week_2.egg-info/dependency_links.txt
+writing entry points to week_2.egg-info/entry_points.txt
+writing requirements to week_2.egg-info/requires.txt
+writing top-level names to week_2.egg-info/top_level.txt
+writing manifest file 'week_2.egg-info/SOURCES.txt'
+reading manifest file 'week_2.egg-info/SOURCES.txt'
+writing manifest file 'week_2.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_2/lib/python3.10/site-packages/week-2.egg-link (link to .)
+Installing turtlebot3_drive_python script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_2/lib/week_2
+
+Installed /home/userfs/d/ds1473/AURO/auro_ws/build/week_2
+running install_data
+creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_2/share/ament_index
+creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_2/share/ament_index/resource_index
+creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_2/share/ament_index/resource_index/packages
+copying resource/week_2 -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_2/share/ament_index/resource_index/packages
+copying package.xml -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_2/share/week_2

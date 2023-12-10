@@ -1,0 +1,27 @@
+[1.389s] Invoking command in '/home/userfs/d/ds1473/ros2_ws/build/launch_testing_examples': PYTHONPATH=/home/userfs/d/ds1473/ros2_ws/build/launch_testing_examples/prefix_override:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/ros2_ws/build/launch_testing_examples/build --no-deps install_data
+[1.698s] running develop
+[1.698s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.698s]   warnings.warn(
+[1.700s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.700s]   warnings.warn(
+[1.931s] running egg_info
+[1.932s] creating launch_testing_examples.egg-info
+[1.933s] writing launch_testing_examples.egg-info/PKG-INFO
+[1.937s] writing dependency_links to launch_testing_examples.egg-info/dependency_links.txt
+[1.940s] writing entry points to launch_testing_examples.egg-info/entry_points.txt
+[1.942s] writing requirements to launch_testing_examples.egg-info/requires.txt
+[1.943s] writing top-level names to launch_testing_examples.egg-info/top_level.txt
+[1.947s] writing manifest file 'launch_testing_examples.egg-info/SOURCES.txt'
+[1.954s] reading manifest file 'launch_testing_examples.egg-info/SOURCES.txt'
+[1.956s] writing manifest file 'launch_testing_examples.egg-info/SOURCES.txt'
+[1.990s] running build_ext
+[1.990s] Creating /home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages/launch-testing-examples.egg-link (link to .)
+[1.996s] 
+[1.996s] Installed /home/userfs/d/ds1473/ros2_ws/build/launch_testing_examples
+[1.996s] running install_data
+[1.997s] creating /home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples/share/ament_index
+[1.997s] creating /home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples/share/ament_index/resource_index
+[1.999s] creating /home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples/share/ament_index/resource_index/packages
+[2.000s] copying resource/launch_testing_examples -> /home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples/share/ament_index/resource_index/packages
+[2.003s] copying package.xml -> /home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples/share/launch_testing_examples
+[2.037s] Invoked command in '/home/userfs/d/ds1473/ros2_ws/build/launch_testing_examples' returned '0': PYTHONPATH=/home/userfs/d/ds1473/ros2_ws/build/launch_testing_examples/prefix_override:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/ros2_ws/build/launch_testing_examples/build --no-deps install_data

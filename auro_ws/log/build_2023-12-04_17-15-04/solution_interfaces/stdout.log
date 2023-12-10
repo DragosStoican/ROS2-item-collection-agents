@@ -1,0 +1,15 @@
+[  3%] Built target solution_interfaces__cpp
+[  3%] Built target ament_cmake_python_symlink_solution_interfaces
+[ 12%] Built target solution_interfaces__rosidl_generator_c
+[ 22%] Built target solution_interfaces__rosidl_typesupport_cpp
+[ 32%] Built target solution_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 41%] Built target solution_interfaces__rosidl_typesupport_introspection_cpp
+[ 58%] Built target solution_interfaces__rosidl_typesupport_c
+[ 61%] Built target solution_interfaces__rosidl_typesupport_introspection_c
+[ 70%] Built target solution_interfaces__rosidl_typesupport_fastrtps_c
+[ 70%] Built target solution_interfaces
+[ 74%] Built target solution_interfaces__py
+[ 80%] Built target solution_interfaces__rosidl_generator_py
+[ 87%] Built target solution_interfaces__rosidl_typesupport_c__pyext
+[ 93%] Built target solution_interfaces__rosidl_typesupport_introspection_c__pyext
+[100%] Built target solution_interfaces__rosidl_typesupport_fastrtps_c__pyext

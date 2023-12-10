@@ -1,0 +1,24 @@
+[1.458s] Invoking command in '/home/userfs/d/ds1473/AURO/assessment/src/solution': PYTHONPATH=/home/userfs/d/ds1473/AURO/assessment/build/solution/prefix_override:/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/solution build --build-base /home/userfs/d/ds1473/AURO/assessment/build/solution/build install --record /home/userfs/d/ds1473/AURO/assessment/build/solution/install.log --single-version-externally-managed
+[1.843s] running egg_info
+[1.845s] writing ../../build/solution/solution.egg-info/PKG-INFO
+[1.978s] writing dependency_links to ../../build/solution/solution.egg-info/dependency_links.txt
+[1.981s] writing entry points to ../../build/solution/solution.egg-info/entry_points.txt
+[1.983s] writing requirements to ../../build/solution/solution.egg-info/requires.txt
+[1.986s] writing top-level names to ../../build/solution/solution.egg-info/top_level.txt
+[2.012s] reading manifest file '../../build/solution/solution.egg-info/SOURCES.txt'
+[2.018s] writing manifest file '../../build/solution/solution.egg-info/SOURCES.txt'
+[2.021s] running build
+[2.021s] running build_py
+[2.027s] running install
+[2.027s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.028s]   warnings.warn(
+[2.028s] running install_lib
+[2.039s] running install_data
+[2.043s] copying launch/solution_launch.py -> /home/userfs/d/ds1473/AURO/assessment/install/solution/share/solution/launch/
+[2.050s] running install_egg_info
+[2.057s] removing '/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info' (and everything under it)
+[2.070s] Copying ../../build/solution/solution.egg-info to /home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info
+[2.110s] running install_scripts
+[2.160s] Installing robot_controller script to /home/userfs/d/ds1473/AURO/assessment/install/solution/lib/solution
+[2.163s] writing list of installed files to '/home/userfs/d/ds1473/AURO/assessment/build/solution/install.log'
+[2.184s] Invoked command in '/home/userfs/d/ds1473/AURO/assessment/src/solution' returned '0': PYTHONPATH=/home/userfs/d/ds1473/AURO/assessment/build/solution/prefix_override:/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/solution build --build-base /home/userfs/d/ds1473/AURO/assessment/build/solution/build install --record /home/userfs/d/ds1473/AURO/assessment/build/solution/install.log --single-version-externally-managed

@@ -1,0 +1,32 @@
+[5.484s] Invoking command in '/home/userfs/d/ds1473/AURO/auro_ws/build/week_3': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/week_3/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/week_3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/AURO/auro_ws/build/week_3/build --no-deps install_data
+[5.833s] running develop
+[5.833s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.833s]   warnings.warn(
+[5.834s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.834s]   warnings.warn(
+[6.113s] running egg_info
+[6.114s] creating week_3.egg-info
+[6.116s] writing week_3.egg-info/PKG-INFO
+[6.120s] writing dependency_links to week_3.egg-info/dependency_links.txt
+[6.123s] writing entry points to week_3.egg-info/entry_points.txt
+[6.125s] writing requirements to week_3.egg-info/requires.txt
+[6.127s] writing top-level names to week_3.egg-info/top_level.txt
+[6.133s] writing manifest file 'week_3.egg-info/SOURCES.txt'
+[6.142s] reading manifest file 'week_3.egg-info/SOURCES.txt'
+[6.144s] writing manifest file 'week_3.egg-info/SOURCES.txt'
+[6.179s] running build_ext
+[6.179s] Creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_3/lib/python3.10/site-packages/week-3.egg-link (link to .)
+[6.185s] Installing rviz_text_marker script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_3/lib/week_3
+[6.189s] Installing turtlebot3_fsm script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_3/lib/week_3
+[6.192s] Installing turtlebot3_random_walk script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_3/lib/week_3
+[6.196s] 
+[6.196s] Installed /home/userfs/d/ds1473/AURO/auro_ws/build/week_3
+[6.197s] running install_data
+[6.197s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_3/share/ament_index
+[6.198s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_3/share/ament_index/resource_index
+[6.199s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_3/share/ament_index/resource_index/packages
+[6.202s] copying resource/week_3 -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_3/share/ament_index/resource_index/packages
+[6.205s] copying package.xml -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_3/share/week_3
+[6.208s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_3/share/week_3/launch
+[6.210s] copying launch/turtlebot3_simulation_launch.py -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_3/share/week_3/launch
+[6.604s] Invoked command in '/home/userfs/d/ds1473/AURO/auro_ws/build/week_3' returned '0': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/week_3/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/week_3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/AURO/auro_ws/build/week_3/build --no-deps install_data

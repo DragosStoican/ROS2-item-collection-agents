@@ -1,0 +1,25 @@
+[1.444s] Invoking command in '/home/userfs/d/ds1473/AURO/auro_ws/src/week_5': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/week_5/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/week_5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/week_5 build --build-base /home/userfs/d/ds1473/AURO/auro_ws/build/week_5/build install --record /home/userfs/d/ds1473/AURO/auro_ws/build/week_5/install.log --single-version-externally-managed
+[1.826s] running egg_info
+[1.828s] writing ../../build/week_5/week_5.egg-info/PKG-INFO
+[1.830s] writing dependency_links to ../../build/week_5/week_5.egg-info/dependency_links.txt
+[1.832s] writing entry points to ../../build/week_5/week_5.egg-info/entry_points.txt
+[1.834s] writing requirements to ../../build/week_5/week_5.egg-info/requires.txt
+[1.835s] writing top-level names to ../../build/week_5/week_5.egg-info/top_level.txt
+[1.842s] reading manifest file '../../build/week_5/week_5.egg-info/SOURCES.txt'
+[1.845s] writing manifest file '../../build/week_5/week_5.egg-info/SOURCES.txt'
+[1.846s] running build
+[1.847s] running build_py
+[1.852s] running install
+[1.852s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.852s]   warnings.warn(
+[1.852s] running install_lib
+[1.857s] running install_data
+[1.860s] running install_egg_info
+[1.863s] removing '/home/userfs/d/ds1473/AURO/auro_ws/install/week_5/lib/python3.10/site-packages/week_5-0.0.0-py3.10.egg-info' (and everything under it)
+[1.871s] Copying ../../build/week_5/week_5.egg-info to /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/lib/python3.10/site-packages/week_5-0.0.0-py3.10.egg-info
+[1.900s] running install_scripts
+[1.927s] Installing item_detector script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/lib/week_5
+[1.930s] Installing item_spawner script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/lib/week_5
+[1.933s] Installing robot_controller_dragos script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_5/lib/week_5
+[1.936s] writing list of installed files to '/home/userfs/d/ds1473/AURO/auro_ws/build/week_5/install.log'
+[1.976s] Invoked command in '/home/userfs/d/ds1473/AURO/auro_ws/src/week_5' returned '0': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/week_5/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/week_5/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/week_5 build --build-base /home/userfs/d/ds1473/AURO/auro_ws/build/week_5/build install --record /home/userfs/d/ds1473/AURO/auro_ws/build/week_5/install.log --single-version-externally-managed

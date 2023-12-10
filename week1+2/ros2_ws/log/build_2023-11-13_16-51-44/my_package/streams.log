@@ -1,0 +1,40 @@
+[3.200s] Invoking command in '/home/userfs/d/ds1473/ros2_ws/src/my_package': PYTHONPATH=/home/userfs/d/ds1473/ros2_ws/build/my_package/prefix_override:/home/userfs/d/ds1473/ros2_ws/install/my_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_package build --build-base /home/userfs/d/ds1473/ros2_ws/build/my_package/build install --record /home/userfs/d/ds1473/ros2_ws/build/my_package/install.log --single-version-externally-managed
+[3.571s] running egg_info
+[3.572s] creating ../../build/my_package/my_package.egg-info
+[3.574s] writing ../../build/my_package/my_package.egg-info/PKG-INFO
+[3.578s] writing dependency_links to ../../build/my_package/my_package.egg-info/dependency_links.txt
+[3.581s] writing entry points to ../../build/my_package/my_package.egg-info/entry_points.txt
+[3.583s] writing requirements to ../../build/my_package/my_package.egg-info/requires.txt
+[3.585s] writing top-level names to ../../build/my_package/my_package.egg-info/top_level.txt
+[3.589s] writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'
+[3.596s] reading manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'
+[3.599s] writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'
+[3.601s] running build
+[3.601s] running build_py
+[3.602s] creating /home/userfs/d/ds1473/ros2_ws/build/my_package/build
+[3.609s] creating /home/userfs/d/ds1473/ros2_ws/build/my_package/build/lib
+[3.612s] creating /home/userfs/d/ds1473/ros2_ws/build/my_package/build/lib/my_package
+[3.614s] copying my_package/__init__.py -> /home/userfs/d/ds1473/ros2_ws/build/my_package/build/lib/my_package
+[3.617s] copying my_package/subscriber_member_function.py -> /home/userfs/d/ds1473/ros2_ws/build/my_package/build/lib/my_package
+[3.620s] running install
+[3.620s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.620s]   warnings.warn(
+[3.620s] running install_lib
+[3.623s] creating /home/userfs/d/ds1473/ros2_ws/install/my_package/lib/python3.10/site-packages/my_package
+[3.625s] copying /home/userfs/d/ds1473/ros2_ws/build/my_package/build/lib/my_package/__init__.py -> /home/userfs/d/ds1473/ros2_ws/install/my_package/lib/python3.10/site-packages/my_package
+[3.628s] copying /home/userfs/d/ds1473/ros2_ws/build/my_package/build/lib/my_package/subscriber_member_function.py -> /home/userfs/d/ds1473/ros2_ws/install/my_package/lib/python3.10/site-packages/my_package
+[3.633s] byte-compiling /home/userfs/d/ds1473/ros2_ws/install/my_package/lib/python3.10/site-packages/my_package/__init__.py to __init__.cpython-310.pyc
+[3.638s] byte-compiling /home/userfs/d/ds1473/ros2_ws/install/my_package/lib/python3.10/site-packages/my_package/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc
+[3.642s] running install_data
+[3.643s] creating /home/userfs/d/ds1473/ros2_ws/install/my_package/share/ament_index
+[3.644s] creating /home/userfs/d/ds1473/ros2_ws/install/my_package/share/ament_index/resource_index
+[3.645s] creating /home/userfs/d/ds1473/ros2_ws/install/my_package/share/ament_index/resource_index/packages
+[3.646s] copying resource/my_package -> /home/userfs/d/ds1473/ros2_ws/install/my_package/share/ament_index/resource_index/packages
+[3.649s] copying package.xml -> /home/userfs/d/ds1473/ros2_ws/install/my_package/share/my_package
+[3.652s] running install_egg_info
+[3.654s] Copying ../../build/my_package/my_package.egg-info to /home/userfs/d/ds1473/ros2_ws/install/my_package/lib/python3.10/site-packages/my_package-0.0.0-py3.10.egg-info
+[3.684s] running install_scripts
+[3.708s] Installing listener script to /home/userfs/d/ds1473/ros2_ws/install/my_package/lib/my_package
+[3.711s] Installing talker script to /home/userfs/d/ds1473/ros2_ws/install/my_package/lib/my_package
+[3.715s] writing list of installed files to '/home/userfs/d/ds1473/ros2_ws/build/my_package/install.log'
+[3.739s] Invoked command in '/home/userfs/d/ds1473/ros2_ws/src/my_package' returned '0': PYTHONPATH=/home/userfs/d/ds1473/ros2_ws/build/my_package/prefix_override:/home/userfs/d/ds1473/ros2_ws/install/my_package/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_package build --build-base /home/userfs/d/ds1473/ros2_ws/build/my_package/build install --record /home/userfs/d/ds1473/ros2_ws/build/my_package/install.log --single-version-externally-managed

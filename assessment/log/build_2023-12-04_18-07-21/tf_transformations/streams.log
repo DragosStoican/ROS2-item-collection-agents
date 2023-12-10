@@ -1,0 +1,35 @@
+[2.366s] Invoking command in '/home/userfs/d/ds1473/AURO/assessment/src/tf_transformations': PYTHONPATH=/home/userfs/d/ds1473/AURO/assessment/build/tf_transformations/prefix_override:/home/userfs/d/ds1473/AURO/assessment/install/tf_transformations/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tf_transformations build --build-base /home/userfs/d/ds1473/AURO/assessment/build/tf_transformations/build install --record /home/userfs/d/ds1473/AURO/assessment/build/tf_transformations/install.log --single-version-externally-managed
+[2.755s] running egg_info
+[2.756s] creating ../../build/tf_transformations/tf_transformations.egg-info
+[2.757s] writing ../../build/tf_transformations/tf_transformations.egg-info/PKG-INFO
+[2.761s] writing dependency_links to ../../build/tf_transformations/tf_transformations.egg-info/dependency_links.txt
+[2.765s] writing requirements to ../../build/tf_transformations/tf_transformations.egg-info/requires.txt
+[2.766s] writing top-level names to ../../build/tf_transformations/tf_transformations.egg-info/top_level.txt
+[2.772s] writing manifest file '../../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'
+[2.780s] reading manifest file '../../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'
+[2.782s] adding license file 'LICENSE'
+[2.783s] writing manifest file '../../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'
+[2.784s] running build
+[2.784s] running build_py
+[2.785s] creating /home/userfs/d/ds1473/AURO/assessment/build/tf_transformations/build
+[2.785s] creating /home/userfs/d/ds1473/AURO/assessment/build/tf_transformations/build/lib
+[2.787s] creating /home/userfs/d/ds1473/AURO/assessment/build/tf_transformations/build/lib/tf_transformations
+[2.789s] copying tf_transformations/__init__.py -> /home/userfs/d/ds1473/AURO/assessment/build/tf_transformations/build/lib/tf_transformations
+[2.792s] running install
+[2.792s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.792s]   warnings.warn(
+[2.793s] running install_lib
+[2.795s] creating /home/userfs/d/ds1473/AURO/assessment/install/tf_transformations/lib/python3.10/site-packages/tf_transformations
+[2.797s] copying /home/userfs/d/ds1473/AURO/assessment/build/tf_transformations/build/lib/tf_transformations/__init__.py -> /home/userfs/d/ds1473/AURO/assessment/install/tf_transformations/lib/python3.10/site-packages/tf_transformations
+[2.802s] byte-compiling /home/userfs/d/ds1473/AURO/assessment/install/tf_transformations/lib/python3.10/site-packages/tf_transformations/__init__.py to __init__.cpython-310.pyc
+[2.812s] running install_data
+[2.812s] creating /home/userfs/d/ds1473/AURO/assessment/install/tf_transformations/share/ament_index
+[2.813s] creating /home/userfs/d/ds1473/AURO/assessment/install/tf_transformations/share/ament_index/resource_index
+[2.814s] creating /home/userfs/d/ds1473/AURO/assessment/install/tf_transformations/share/ament_index/resource_index/packages
+[2.816s] copying resource/tf_transformations -> /home/userfs/d/ds1473/AURO/assessment/install/tf_transformations/share/ament_index/resource_index/packages
+[2.819s] copying package.xml -> /home/userfs/d/ds1473/AURO/assessment/install/tf_transformations/share/tf_transformations
+[2.821s] running install_egg_info
+[2.824s] Copying ../../build/tf_transformations/tf_transformations.egg-info to /home/userfs/d/ds1473/AURO/assessment/install/tf_transformations/lib/python3.10/site-packages/tf_transformations-1.0.2-py3.10.egg-info
+[2.850s] running install_scripts
+[2.872s] writing list of installed files to '/home/userfs/d/ds1473/AURO/assessment/build/tf_transformations/install.log'
+[2.894s] Invoked command in '/home/userfs/d/ds1473/AURO/assessment/src/tf_transformations' returned '0': PYTHONPATH=/home/userfs/d/ds1473/AURO/assessment/build/tf_transformations/prefix_override:/home/userfs/d/ds1473/AURO/assessment/install/tf_transformations/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tf_transformations build --build-base /home/userfs/d/ds1473/AURO/assessment/build/tf_transformations/build install --record /home/userfs/d/ds1473/AURO/assessment/build/tf_transformations/install.log --single-version-externally-managed

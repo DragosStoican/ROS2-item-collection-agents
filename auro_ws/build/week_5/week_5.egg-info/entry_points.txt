@@ -1,0 +1,5 @@
+[console_scripts]
+item_detector = week_5.item_detector:main
+item_spawner = week_5.item_spawner:main
+robot_controller_dragos = week_5.robot_controller_dragos:main
+

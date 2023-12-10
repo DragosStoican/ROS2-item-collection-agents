@@ -1,0 +1,21 @@
+[4.738s] Invoking command in '/home/userfs/d/ds1473/AURO/auro_ws/build/solution': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/solution/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/AURO/auro_ws/build/solution/build --no-deps install_data
+[5.176s] running develop
+[5.176s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[5.177s]   warnings.warn(
+[5.178s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[5.178s]   warnings.warn(
+[5.591s] running egg_info
+[5.592s] writing solution.egg-info/PKG-INFO
+[5.596s] writing dependency_links to solution.egg-info/dependency_links.txt
+[5.599s] writing entry points to solution.egg-info/entry_points.txt
+[5.601s] writing requirements to solution.egg-info/requires.txt
+[5.603s] writing top-level names to solution.egg-info/top_level.txt
+[5.616s] reading manifest file 'solution.egg-info/SOURCES.txt'
+[5.618s] writing manifest file 'solution.egg-info/SOURCES.txt'
+[5.657s] running build_ext
+[5.657s] Creating /home/userfs/d/ds1473/AURO/auro_ws/install/solution/lib/python3.10/site-packages/solution.egg-link (link to .)
+[5.662s] Installing robot_controller script to /home/userfs/d/ds1473/AURO/auro_ws/install/solution/lib/solution
+[5.671s] 
+[5.671s] Installed /home/userfs/d/ds1473/AURO/auro_ws/build/solution
+[5.671s] running install_data
+[6.401s] Invoked command in '/home/userfs/d/ds1473/AURO/auro_ws/build/solution' returned '0': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/solution/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/AURO/auro_ws/build/solution/build --no-deps install_data

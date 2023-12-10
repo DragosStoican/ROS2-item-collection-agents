@@ -1,0 +1,41 @@
+[1.570s] Invoking command in '/home/userfs/d/ds1473/AURO/auro_ws/build/solution_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble:/home/userfs/d/ds1473/AURO/auro_ws/install/week_8:/home/userfs/d/ds1473/AURO/auro_ws/install/week_7:/home/userfs/d/ds1473/AURO/auro_ws/install/week_6:/home/userfs/d/ds1473/AURO/auro_ws/install/week_5:/home/userfs/d/ds1473/AURO/auro_ws/install/week_4:/home/userfs/d/ds1473/AURO/auro_ws/install/week_3:/home/userfs/d/ds1473/AURO/auro_ws/install/week_2:/home/userfs/d/ds1473/AURO/auro_ws/install/week_1:/home/userfs/d/ds1473/AURO/auro_ws/install/tf_transformations:/home/userfs/d/ds1473/AURO/auro_ws/install/tf_relay:/home/userfs/d/ds1473/AURO/auro_ws/install/solution_interfaces:/home/userfs/d/ds1473/AURO/auro_ws/install/solution:/home/userfs/d/ds1473/AURO/auro_ws/install/assessment:/home/userfs/d/ds1473/AURO/week3_ws/install/week_3:/home/userfs/d/ds1473/AURO/week3_ws/install/tf_transformations /usr/bin/cmake --build /home/userfs/d/ds1473/AURO/auro_ws/build/solution_interfaces -- -j6 -l6
+[1.669s] [  3%] Built target solution_interfaces__cpp
+[1.676s] [  3%] Built target ament_cmake_python_symlink_solution_interfaces
+[1.707s] [ 12%] Built target solution_interfaces__rosidl_generator_c
+[1.726s] [ 22%] Built target solution_interfaces__rosidl_typesupport_cpp
+[1.736s] [ 32%] Built target solution_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.757s] [ 41%] Built target solution_interfaces__rosidl_typesupport_introspection_cpp
+[1.780s] [ 58%] Built target solution_interfaces__rosidl_typesupport_c
+[1.781s] [ 61%] Built target solution_interfaces__rosidl_typesupport_introspection_c
+[1.800s] [ 70%] Built target solution_interfaces__rosidl_typesupport_fastrtps_c
+[1.833s] [ 70%] Built target solution_interfaces
+[1.867s] [ 74%] Built target solution_interfaces__py
+[1.924s] [ 80%] Built target solution_interfaces__rosidl_generator_py
+[1.978s] [ 87%] Built target solution_interfaces__rosidl_typesupport_c__pyext
+[2.001s] [ 93%] Built target solution_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.028s] [100%] Built target solution_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.045s] Traceback (most recent call last):
+[2.045s]   File "/home/userfs/d/ds1473/AURO/auro_ws/build/solution_interfaces/ament_cmake_python/solution_interfaces/setup.py", line 1, in <module>
+[2.045s]     from setuptools import find_packages
+[2.045s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[2.046s]     import setuptools.version
+[2.046s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[2.046s]     import pkg_resources
+[2.046s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3267, in <module>
+[2.047s]     def _initialize_master_working_set():
+[2.047s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3241, in _call_aside
+[2.048s]     f(*args, **kwargs)
+[2.048s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3302, in _initialize_master_working_set
+[2.048s]     list(map(working_set.add_entry, sys.path))
+[2.049s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 613, in add_entry
+[2.049s]     for dist in find_distributions(entry, True):
+[2.049s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2073, in find_on_path
+[2.049s]     path_item_entries = _by_version_descending(filtered)
+[2.050s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2043, in _by_version_descending
+[2.050s]     return sorted(names, key=_by_version, reverse=True)
+[2.050s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2069, in <genexpr>
+[2.050s]     if dist_factory(path_item, entry, only)
+[2.050s] KeyboardInterrupt
+[2.070s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_solution_interfaces_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_solution_interfaces_egg] Interrupt
+[2.070s] gmake[1]: *** [CMakeFiles/Makefile2:447: CMakeFiles/ament_cmake_python_build_solution_interfaces_egg.dir/all] Interrupt
+[2.070s] gmake: *** [Makefile:146: all] Interrupt

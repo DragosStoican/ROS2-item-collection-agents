@@ -1,0 +1,79 @@
+[1.499s] Invoking command in '/home/userfs/d/ds1473/AURO/auro_ws/src/week_8': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/week_8/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/week_8 build --build-base /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build install --record /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/install.log --single-version-externally-managed
+[1.900s] running egg_info
+[1.900s] creating ../../build/week_8/week_8.egg-info
+[1.902s] writing ../../build/week_8/week_8.egg-info/PKG-INFO
+[1.907s] writing dependency_links to ../../build/week_8/week_8.egg-info/dependency_links.txt
+[1.910s] writing entry points to ../../build/week_8/week_8.egg-info/entry_points.txt
+[1.912s] writing requirements to ../../build/week_8/week_8.egg-info/requires.txt
+[1.914s] writing top-level names to ../../build/week_8/week_8.egg-info/top_level.txt
+[1.918s] writing manifest file '../../build/week_8/week_8.egg-info/SOURCES.txt'
+[1.926s] reading manifest file '../../build/week_8/week_8.egg-info/SOURCES.txt'
+[1.929s] writing manifest file '../../build/week_8/week_8.egg-info/SOURCES.txt'
+[1.931s] running build
+[1.931s] running build_py
+[1.932s] creating /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build
+[1.933s] creating /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib
+[1.934s] creating /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8
+[1.936s] copying week_8/__init__.py -> /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8
+[1.939s] copying week_8/autonomous_navigation.py -> /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8
+[1.942s] copying week_8/joint_state_republisher.py -> /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8
+[1.946s] copying week_8/path_publisher.py -> /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8
+[1.949s] copying week_8/robot_controller.py -> /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8
+[1.952s] copying week_8/simple_commander.py -> /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8
+[1.956s] running install
+[1.956s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.956s]   warnings.warn(
+[1.956s] running install_lib
+[1.959s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8
+[1.961s] copying /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8/__init__.py -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8
+[1.964s] copying /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8/autonomous_navigation.py -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8
+[1.969s] copying /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8/joint_state_republisher.py -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8
+[1.973s] copying /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8/path_publisher.py -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8
+[1.977s] copying /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8/robot_controller.py -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8
+[1.981s] copying /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build/lib/week_8/simple_commander.py -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8
+[1.987s] byte-compiling /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8/__init__.py to __init__.cpython-310.pyc
+[1.993s] byte-compiling /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8/autonomous_navigation.py to autonomous_navigation.cpython-310.pyc
+[1.999s] byte-compiling /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8/joint_state_republisher.py to joint_state_republisher.cpython-310.pyc
+[2.005s] byte-compiling /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8/path_publisher.py to path_publisher.cpython-310.pyc
+[2.010s] byte-compiling /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8/robot_controller.py to robot_controller.cpython-310.pyc
+[2.015s] byte-compiling /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8/simple_commander.py to simple_commander.cpython-310.pyc
+[2.019s] running install_data
+[2.020s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/ament_index
+[2.021s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/ament_index/resource_index
+[2.022s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/ament_index/resource_index/packages
+[2.025s] copying resource/week_8 -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/ament_index/resource_index/packages
+[2.028s] copying package.xml -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8
+[2.032s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/models
+[2.032s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/models/turtlebot3_waffle_pi_edited
+[2.034s] copying models/turtlebot3_waffle_pi_edited/model.config -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/models/turtlebot3_waffle_pi_edited
+[2.038s] copying models/turtlebot3_waffle_pi_edited/model.sdf -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/models/turtlebot3_waffle_pi_edited
+[2.042s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/models/turtlebot3_waffle_pi_odom
+[2.043s] copying models/turtlebot3_waffle_pi_odom/model.config -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/models/turtlebot3_waffle_pi_odom
+[2.047s] copying models/turtlebot3_waffle_pi_odom/model.sdf -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/models/turtlebot3_waffle_pi_odom
+[2.051s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/models/turtlebot3_world_auro
+[2.053s] copying models/turtlebot3_world_auro/model.config -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/models/turtlebot3_world_auro
+[2.056s] copying models/turtlebot3_world_auro/model.sdf -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/models/turtlebot3_world_auro
+[2.060s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/launch
+[2.062s] copying launch/week_8_launch.py -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/launch/
+[2.066s] copying launch/week_8_nav2_launch.py -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/launch/
+[2.070s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/worlds
+[2.072s] copying worlds/turtlebot3_world_empty.world -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/worlds/
+[2.076s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/rviz
+[2.077s] copying rviz/paths.rviz -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/rviz/
+[2.082s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/urdf
+[2.083s] copying urdf/true_turtlebot3_waffle_pi.urdf -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/urdf/
+[2.087s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/maps
+[2.089s] copying maps/auro_map.pgm -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/maps/
+[2.093s] copying maps/auro_map.yaml -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/maps/
+[2.097s] creating /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/params
+[2.099s] copying params/nav2_params.yaml -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/params/
+[2.103s] running install_egg_info
+[2.105s] Copying ../../build/week_8/week_8.egg-info to /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8-0.0.0-py3.10.egg-info
+[2.138s] running install_scripts
+[2.159s] Installing autonomous_navigation script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/week_8
+[2.163s] Installing joint_state_republisher script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/week_8
+[2.166s] Installing path_publisher script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/week_8
+[2.169s] Installing robot_controller script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/week_8
+[2.172s] Installing simple_commander script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/week_8
+[2.176s] writing list of installed files to '/home/userfs/d/ds1473/AURO/auro_ws/build/week_8/install.log'
+[2.196s] Invoked command in '/home/userfs/d/ds1473/AURO/auro_ws/src/week_8' returned '0': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/week_8/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/week_8 build --build-base /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build install --record /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/install.log --single-version-externally-managed

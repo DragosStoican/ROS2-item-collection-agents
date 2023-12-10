@@ -1,0 +1,29 @@
+[1.551s] Invoking command in '/home/userfs/d/ds1473/AURO/auro_ws/src/week_8': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/week_8/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/week_8 build --build-base /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build install --record /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/install.log --single-version-externally-managed
+[1.959s] running egg_info
+[1.961s] writing ../../build/week_8/week_8.egg-info/PKG-INFO
+[1.964s] writing dependency_links to ../../build/week_8/week_8.egg-info/dependency_links.txt
+[1.964s] writing entry points to ../../build/week_8/week_8.egg-info/entry_points.txt
+[1.966s] writing requirements to ../../build/week_8/week_8.egg-info/requires.txt
+[1.967s] writing top-level names to ../../build/week_8/week_8.egg-info/top_level.txt
+[1.982s] reading manifest file '../../build/week_8/week_8.egg-info/SOURCES.txt'
+[1.984s] writing manifest file '../../build/week_8/week_8.egg-info/SOURCES.txt'
+[1.986s] running build
+[1.986s] running build_py
+[1.990s] running install
+[1.991s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.991s]   warnings.warn(
+[1.992s] running install_lib
+[1.999s] running install_data
+[2.003s] copying models/turtlebot3_waffle_pi_odom/model.sdf -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/models/turtlebot3_waffle_pi_odom
+[2.009s] copying launch/week_8_launch.py -> /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/share/week_8/launch/
+[2.016s] running install_egg_info
+[2.018s] removing '/home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8-0.0.0-py3.10.egg-info' (and everything under it)
+[2.026s] Copying ../../build/week_8/week_8.egg-info to /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages/week_8-0.0.0-py3.10.egg-info
+[2.050s] running install_scripts
+[2.074s] Installing autonomous_navigation script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/week_8
+[2.076s] Installing joint_state_republisher script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/week_8
+[2.079s] Installing path_publisher script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/week_8
+[2.081s] Installing robot_controller script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/week_8
+[2.084s] Installing simple_commander script to /home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/week_8
+[2.088s] writing list of installed files to '/home/userfs/d/ds1473/AURO/auro_ws/build/week_8/install.log'
+[2.112s] Invoked command in '/home/userfs/d/ds1473/AURO/auro_ws/src/week_8' returned '0': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/week_8/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/week_8/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/week_8 build --build-base /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/build install --record /home/userfs/d/ds1473/AURO/auro_ws/build/week_8/install.log --single-version-externally-managed

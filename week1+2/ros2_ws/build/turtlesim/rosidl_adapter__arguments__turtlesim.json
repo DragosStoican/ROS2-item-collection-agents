@@ -1,0 +1,13 @@
+{
+  "package_name": "turtlesim",
+  "non_idl_tuples": [
+    "/home/userfs/d/ds1473/ros2_ws/src/turtlesim:action/RotateAbsolute.action",
+    "/home/userfs/d/ds1473/ros2_ws/src/turtlesim:msg/Color.msg",
+    "/home/userfs/d/ds1473/ros2_ws/src/turtlesim:msg/Pose.msg",
+    "/home/userfs/d/ds1473/ros2_ws/src/turtlesim:srv/Kill.srv",
+    "/home/userfs/d/ds1473/ros2_ws/src/turtlesim:srv/SetPen.srv",
+    "/home/userfs/d/ds1473/ros2_ws/src/turtlesim:srv/Spawn.srv",
+    "/home/userfs/d/ds1473/ros2_ws/src/turtlesim:srv/TeleportAbsolute.srv",
+    "/home/userfs/d/ds1473/ros2_ws/src/turtlesim:srv/TeleportRelative.srv"
+  ]
+}

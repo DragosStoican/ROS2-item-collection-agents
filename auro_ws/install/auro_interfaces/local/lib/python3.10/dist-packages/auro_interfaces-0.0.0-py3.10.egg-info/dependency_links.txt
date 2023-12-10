@@ -1,0 +1,1 @@
+/home/userfs/d/ds1473/AURO/auro_ws/build/auro_interfaces/ament_cmake_python/auro_interfaces/auro_interfaces.egg-info/dependency_links.txt

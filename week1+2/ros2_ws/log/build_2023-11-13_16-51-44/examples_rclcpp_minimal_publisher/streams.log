@@ -1,0 +1,66 @@
+[0.666s] Invoking command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_server:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_guard_conditions:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/userfs/d/ds1473/ros2_ws/src/examples/rclcpp/topics/minimal_publisher -DCMAKE_INSTALL_PREFIX=/home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher
+[0.681s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.892s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.923s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[0.972s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.975s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.981s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.993s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.009s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.071s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.071s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.098s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.270s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.408s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.415s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.415s] -- Configured cppcheck include dirs: 
+[1.415s] -- Configured cppcheck exclude dirs and/or files: 
+[1.420s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.420s] -- Configured cpplint exclude dirs and/or files: 
+[1.422s] -- Added test 'lint_cmake' to check CMake code style
+[1.426s] -- Added test 'uncrustify' to check C / C++ code style
+[1.427s] -- Configured uncrustify additional arguments: 
+[1.427s] -- Added test 'xmllint' to check XML markup files
+[1.442s] -- Configuring done
+[1.672s] -- Generating done
+[1.714s] -- Build files have been written to: /home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_publisher
+[1.955s] Invoked command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_server:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_guard_conditions:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/userfs/d/ds1473/ros2_ws/src/examples/rclcpp/topics/minimal_publisher -DCMAKE_INSTALL_PREFIX=/home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher
+[1.956s] Invoking command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_server:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_guard_conditions:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_publisher -- -j6 -l6
+[2.015s] [35m[1mConsolidate compiler generated dependencies of target publisher_lambda[0m
+[2.016s] [35m[1mConsolidate compiler generated dependencies of target publisher_member_function[0m
+[2.025s] [35m[1mConsolidate compiler generated dependencies of target publisher_not_composable[0m
+[2.026s] [35m[1mConsolidate compiler generated dependencies of target publisher_member_function_with_unique_network_flow_endpoints[0m
+[2.032s] [35m[1mConsolidate compiler generated dependencies of target publisher_wait_for_all_acked[0m
+[2.032s] [35m[1mConsolidate compiler generated dependencies of target publisher_member_function_with_type_adapter[0m
+[2.067s] [ 16%] Built target publisher_lambda
+[2.075s] [ 50%] Built target publisher_member_function_with_unique_network_flow_endpoints
+[2.076s] [ 66%] Built target publisher_not_composable
+[2.079s] [ 83%] Built target publisher_member_function
+[2.084s] [100%] Built target publisher_member_function_with_type_adapter
+[2.085s] [100%] Built target publisher_wait_for_all_acked
+[2.107s] Invoked command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_server:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_guard_conditions:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_publisher -- -j6 -l6
+[2.168s] Invoking command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_publisher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_server:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_guard_conditions:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_publisher
+[2.183s] -- Install configuration: ""
+[2.183s] -- Execute custom install script
+[2.183s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_lambda
+[2.183s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_member_function
+[2.183s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_member_function_with_type_adapter
+[2.184s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_member_function_with_unique_network_flow_endpoints
+[2.185s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_wait_for_all_acked
+[2.187s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/lib/examples_rclcpp_minimal_publisher/publisher_not_composable
+[2.188s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_publisher
+[2.191s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_publisher
+[2.193s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/environment/ament_prefix_path.sh
+[2.194s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/environment/ament_prefix_path.dsv
+[2.195s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/environment/path.sh
+[2.197s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/environment/path.dsv
+[2.199s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/local_setup.bash
+[2.201s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/local_setup.sh
+[2.203s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/local_setup.zsh
+[2.204s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/local_setup.dsv
+[2.206s] -- Symlinking: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/package.dsv
+[2.218s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/ament_index/resource_index/packages/examples_rclcpp_minimal_publisher
+[2.221s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/cmake/examples_rclcpp_minimal_publisherConfig.cmake
+[2.222s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/cmake/examples_rclcpp_minimal_publisherConfig-version.cmake
+[2.224s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_publisher/share/examples_rclcpp_minimal_publisher/package.xml
+[2.305s] Invoked command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_publisher' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_server:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_guard_conditions:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_publisher

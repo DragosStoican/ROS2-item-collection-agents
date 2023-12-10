@@ -1,0 +1,43 @@
+[1.319s] Invoking command in '/home/userfs/d/ds1473/ros2_ws/src/py_pubsub': PYTHONPATH=/home/userfs/d/ds1473/ros2_ws/build/py_pubsub/prefix_override:/home/userfs/d/ds1473/ros2_ws/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/build install --record /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/install.log --single-version-externally-managed
+[1.673s] running egg_info
+[1.674s] creating ../../build/py_pubsub/py_pubsub.egg-info
+[1.676s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[1.680s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[1.683s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[1.685s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[1.687s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[1.691s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[1.700s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[1.703s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[1.705s] running build
+[1.705s] running build_py
+[1.706s] creating /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/build
+[1.707s] creating /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/build/lib
+[1.708s] creating /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/build/lib/py_pubsub
+[1.710s] copying py_pubsub/__init__.py -> /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/build/lib/py_pubsub
+[1.712s] copying py_pubsub/publisher_member_function.py -> /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/build/lib/py_pubsub
+[1.715s] copying py_pubsub/subscriber_member_function.py -> /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/build/lib/py_pubsub
+[1.718s] running install
+[1.718s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.718s]   warnings.warn(
+[1.718s] running install_lib
+[1.721s] creating /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[1.723s] copying /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[1.726s] copying /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[1.730s] copying /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[1.736s] byte-compiling /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/__init__.py to __init__.cpython-310.pyc
+[1.742s] byte-compiling /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-310.pyc
+[1.747s] byte-compiling /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc
+[1.752s] running install_data
+[1.753s] creating /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/share/ament_index
+[1.754s] creating /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/share/ament_index/resource_index
+[1.755s] creating /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/share/ament_index/resource_index/packages
+[1.758s] copying resource/py_pubsub -> /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/share/ament_index/resource_index/packages
+[1.762s] copying package.xml -> /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/share/py_pubsub
+[1.766s] running install_egg_info
+[1.775s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info
+[1.817s] running install_scripts
+[1.866s] Installing listener script to /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/lib/py_pubsub
+[1.869s] Installing talker script to /home/userfs/d/ds1473/ros2_ws/install/py_pubsub/lib/py_pubsub
+[1.873s] writing list of installed files to '/home/userfs/d/ds1473/ros2_ws/build/py_pubsub/install.log'
+[1.892s] Invoked command in '/home/userfs/d/ds1473/ros2_ws/src/py_pubsub' returned '0': PYTHONPATH=/home/userfs/d/ds1473/ros2_ws/build/py_pubsub/prefix_override:/home/userfs/d/ds1473/ros2_ws/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/build install --record /home/userfs/d/ds1473/ros2_ws/build/py_pubsub/install.log --single-version-externally-managed

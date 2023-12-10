@@ -1,0 +1,21 @@
+[3.557s] Invoking command in '/home/userfs/d/ds1473/AURO/auro_ws/build/tf_relay': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/tf_relay/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/AURO/auro_ws/build/tf_relay/build --no-deps install_data
+[3.977s] running develop
+[3.978s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.978s]   warnings.warn(
+[3.980s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.980s]   warnings.warn(
+[4.401s] running egg_info
+[4.402s] writing tf_relay.egg-info/PKG-INFO
+[4.404s] writing dependency_links to tf_relay.egg-info/dependency_links.txt
+[4.408s] writing entry points to tf_relay.egg-info/entry_points.txt
+[4.409s] writing requirements to tf_relay.egg-info/requires.txt
+[4.412s] writing top-level names to tf_relay.egg-info/top_level.txt
+[4.424s] reading manifest file 'tf_relay.egg-info/SOURCES.txt'
+[4.430s] writing manifest file 'tf_relay.egg-info/SOURCES.txt'
+[4.468s] running build_ext
+[4.469s] Creating /home/userfs/d/ds1473/AURO/auro_ws/install/tf_relay/lib/python3.10/site-packages/tf-relay.egg-link (link to .)
+[4.474s] Installing relay script to /home/userfs/d/ds1473/AURO/auro_ws/install/tf_relay/lib/tf_relay
+[4.478s] 
+[4.478s] Installed /home/userfs/d/ds1473/AURO/auro_ws/build/tf_relay
+[4.478s] running install_data
+[4.897s] Invoked command in '/home/userfs/d/ds1473/AURO/auro_ws/build/tf_relay' returned '0': PYTHONPATH=/home/userfs/d/ds1473/AURO/auro_ws/build/tf_relay/prefix_override:/home/userfs/d/ds1473/AURO/auro_ws/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/userfs/d/ds1473/AURO/auro_ws/build/tf_relay/build --no-deps install_data

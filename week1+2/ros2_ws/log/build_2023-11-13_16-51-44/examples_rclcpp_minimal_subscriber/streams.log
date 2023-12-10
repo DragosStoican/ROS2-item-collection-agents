@@ -1,0 +1,83 @@
+[0.639s] Invoking command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_server:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_guard_conditions:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/userfs/d/ds1473/ros2_ws/src/examples/rclcpp/topics/minimal_subscriber -DCMAKE_INSTALL_PREFIX=/home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber
+[0.649s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.858s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.886s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[0.938s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.940s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.946s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.958s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.976s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.037s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.040s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.071s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.239s] -- Found rclcpp_components: 16.0.6 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.350s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.487s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.496s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.496s] -- Configured cppcheck include dirs: 
+[1.496s] -- Configured cppcheck exclude dirs and/or files: 
+[1.504s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.505s] -- Configured cpplint exclude dirs and/or files: 
+[1.505s] -- Added test 'lint_cmake' to check CMake code style
+[1.507s] -- Added test 'uncrustify' to check C / C++ code style
+[1.507s] -- Configured uncrustify additional arguments: 
+[1.509s] -- Added test 'xmllint' to check XML markup files
+[1.525s] -- Configuring done
+[1.947s] -- Generating done
+[1.995s] -- Build files have been written to: /home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_subscriber
+[2.632s] Invoked command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_server:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_guard_conditions:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/userfs/d/ds1473/ros2_ws/src/examples/rclcpp/topics/minimal_subscriber -DCMAKE_INSTALL_PREFIX=/home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber
+[2.634s] Invoking command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_server:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_guard_conditions:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_subscriber -- -j6 -l6
+[2.695s] [35m[1mConsolidate compiler generated dependencies of target subscriber_lambda[0m
+[2.695s] [35m[1mConsolidate compiler generated dependencies of target subscriber_member_function[0m
+[2.695s] [35m[1mConsolidate compiler generated dependencies of target subscriber_member_function_with_topic_statistics[0m
+[2.696s] [35m[1mConsolidate compiler generated dependencies of target subscriber_member_function_with_unique_network_flow_endpoints[0m
+[2.697s] [35m[1mConsolidate compiler generated dependencies of target subscriber_not_composable[0m
+[2.710s] [35m[1mConsolidate compiler generated dependencies of target subscriber_member_function_with_type_adapter[0m
+[2.736s] [ 20%] Built target subscriber_lambda
+[2.736s] [ 20%] Built target subscriber_member_function_with_unique_network_flow_endpoints
+[2.737s] [ 29%] Built target subscriber_member_function
+[2.741s] [ 41%] Built target subscriber_not_composable
+[2.744s] [ 45%] Built target subscriber_member_function_with_topic_statistics
+[2.746s] [ 50%] Built target subscriber_member_function_with_type_adapter
+[2.755s] [35m[1mConsolidate compiler generated dependencies of target wait_set_subscriber[0m
+[2.755s] [35m[1mConsolidate compiler generated dependencies of target subscriber_content_filtering[0m
+[2.757s] [35m[1mConsolidate compiler generated dependencies of target wait_set_subscriber_library[0m
+[2.763s] [35m[1mConsolidate compiler generated dependencies of target static_wait_set_subscriber[0m
+[2.765s] [35m[1mConsolidate compiler generated dependencies of target time_triggered_wait_set_subscriber[0m
+[2.794s] [ 66%] Built target subscriber_content_filtering
+[2.794s] [ 66%] Built target wait_set_subscriber
+[2.806s] [100%] Built target static_wait_set_subscriber
+[2.806s] [100%] Built target time_triggered_wait_set_subscriber
+[2.806s] [100%] Built target wait_set_subscriber_library
+[3.740s] Invoked command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_server:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_guard_conditions:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_subscriber -- -j6 -l6
+[3.861s] Invoking command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_server:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_guard_conditions:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_subscriber
+[3.868s] -- Install configuration: ""
+[3.870s] -- Execute custom install script
+[3.873s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/wait_set_subscriber
+[3.875s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/static_wait_set_subscriber
+[3.877s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/time_triggered_wait_set_subscriber
+[3.879s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/libwait_set_subscriber_library.so
+[3.882s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_lambda
+[3.883s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function
+[3.885s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_topic_statistics
+[3.886s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_type_adapter
+[3.888s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_unique_network_flow_endpoints
+[3.891s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_not_composable
+[3.893s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_content_filtering
+[3.894s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_subscriber
+[3.897s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_subscriber
+[3.902s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.sh
+[3.903s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.dsv
+[3.905s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.sh
+[3.907s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.dsv
+[3.909s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.bash
+[3.912s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.sh
+[3.914s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.zsh
+[3.919s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.dsv
+[3.919s] -- Symlinking: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.dsv
+[3.935s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/packages/examples_rclcpp_minimal_subscriber
+[3.937s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/rclcpp_components/examples_rclcpp_minimal_subscriber
+[3.938s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig.cmake
+[3.940s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig-version.cmake
+[3.941s] -- Up-to-date symlink: /home/userfs/d/ds1473/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.xml
+[4.106s] Invoked command in '/home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/userfs/d/ds1473/ros2_ws/install/launch_testing_examples:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_service:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_publisher:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_server:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_minimal_action_client:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_guard_conditions:/home/userfs/d/ds1473/ros2_ws/install/examples_rclpy_executors:/opt/ros/humble/york/install/turtlebot3_teleop:/opt/ros/humble/york/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/userfs/d/ds1473/ros2_ws/build/examples_rclcpp_minimal_subscriber

@@ -1,0 +1,1 @@
+/home/userfs/d/ds1473/AURO/auro_ws/build/auro_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake
