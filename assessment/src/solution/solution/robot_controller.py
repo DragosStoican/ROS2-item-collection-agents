@@ -5,6 +5,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.signals import SignalHandlerOptions
 from rclpy.executors import ExternalShutdownException
+from rclpy.qos import QoSProfile, QoSDurabilityPolicy
 
 from assessment_interfaces.msg import ItemList
 from geometry_msgs.msg import Twist, Pose
@@ -13,7 +14,7 @@ from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 from nav2_simple_commander.costmap_2d import PyCostmap2D
 from nav_msgs.msg import OccupancyGrid
 from nav_msgs.srv import GetMap
-from nav2_simple_commander.costmap_2d import PyCostmap2D
+from array import *
 
 class State(Enum):
     SEARCH = 0 # Search for an item to collect
@@ -30,6 +31,7 @@ class RobotController(Node):
         self.declare_parameter('colour', '')
 
         self.state = State.SEARCH
+        self.test = True
         
 
         # Costmap
@@ -39,7 +41,8 @@ class RobotController(Node):
             self.get_logger().info('service not available, waiting again...')
         self.req = GetMap.Request()
         response = self.send_request()
-        self.map = response.map
+        self.occupancy_grid = response.map
+        self.map = PyCostmap2D(self.occupancy_grid)
         # self.map = response
 
 
@@ -62,9 +65,24 @@ class RobotController(Node):
             10)
         
         self.cmd_vel_publisher = self.create_publisher(Twist, 'cmd_vel', 10)
+        qos = QoSProfile(durability = QoSDurabilityPolicy.TRANSIENT_LOCAL,
+                         depth = 10)
+        self.occupancy_grid_punlisher = self.create_publisher(OccupancyGrid, 'map', qos)
 
         self.timer_period = 0.1 # 100 milliseconds = 10 Hz
         self.timer = self.create_timer(self.timer_period, self.control_loop)
+
+    def updateMap(self):
+        self.get_logger().info("Test: " + str(self.occupancy_grid.data.typecode))
+
+        # while self.occupancy_grid.data.itemsize > 0:
+        #     self.occupancy_grid.data.pop()
+        # self.get_logger().info("Test: " + str(self.occupancy_grid.data.itemsize))
+        # self.occupancy_grid.data.fromlist(self.map.costmap.tolist())
+        self.occupancy_grid.data = array('b', self.map.costmap)
+        # self.get_logger().info("Test: " + str(type(self.occupancy_grid.data)))
+        self.get_logger().info("Puiblishing to /robot1/map")
+        self.occupancy_grid_punlisher.publish(self.occupancy_grid)
 
     def send_request(self):
         self.future = self.cli.call_async(self.req)
@@ -79,7 +97,30 @@ class RobotController(Node):
         # # colour = self.get_parameter('colour').get_parameter_value().string_value
         match self.state:
             case State.SEARCH:
-                self.get_logger().info("My map is: " + (str(type(self.map)))) #OccupancyGrid
+                # self.get_logger().info("My map is: " + (str(self.map.costmap))) #OccupancyGrid
+                # self.get_logger().info("Resolution: " + str(self.map.resolution) + "\n" +
+                #                        "Postion: " + str(self.map.getOriginX()) + " " + str(self.map.origin_y) + "\n" +
+                #                        "Width: " + str(self.map.getSizeInCellsX()) + "\n" +
+                #                        "Height: " + str(self.map.getSizeInCellsY()) + "\n" +
+                #                        "Width_meters: " + str(self.map.getSizeInMetersX()) + "\n" +
+                #                        "Height_meters: " + str(self.map.getSizeInMetersY())
+                                        # )
+                if self.test:
+                    self.get_logger().info("Test: " + str(type(self.occupancy_grid.data)))
+                    self.get_logger().info("Max cost is: " + (str(self.map.costmap.max())))
+                    max = self.map.costmap.max()
+                    x, y = self.map.worldToMap(-2, 0)
+                    self.get_logger().info("Old cost is: " + (str(self.map.getCostXY(x, y))))
+                    self.map.setCost(x, y, max)
+                    self.get_logger().info("New cost is: " + (str(self.map.getCostXY(x, y))))
+                    self.updateMap()
+                    
+                    self.test = False
+                else:
+                    self.get_logger().info("Hello!")
+                                       
+
+                                       
                 # self.get_logger().info(self.get_namespace() + " detected items in front " + (str(self.items)))
 
         #         if len(self.items) > 0:
