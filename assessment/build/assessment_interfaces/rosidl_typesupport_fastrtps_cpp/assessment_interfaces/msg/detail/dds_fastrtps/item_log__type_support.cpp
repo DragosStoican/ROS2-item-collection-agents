@@ -42,10 +42,10 @@ cdr_serialize(
   cdr << ros_message.total_count;
   // Member: red_value
   cdr << ros_message.red_value;
-  // Member: blue_value
-  cdr << ros_message.blue_value;
   // Member: green_value
   cdr << ros_message.green_value;
+  // Member: blue_value
+  cdr << ros_message.blue_value;
   // Member: total_value
   cdr << ros_message.total_value;
   return true;
@@ -72,11 +72,11 @@ cdr_deserialize(
   // Member: red_value
   cdr >> ros_message.red_value;
 
-  // Member: blue_value
-  cdr >> ros_message.blue_value;
-
   // Member: green_value
   cdr >> ros_message.green_value;
+
+  // Member: blue_value
+  cdr >> ros_message.blue_value;
 
   // Member: total_value
   cdr >> ros_message.total_value;
@@ -127,15 +127,15 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: blue_value
-  {
-    size_t item_size = sizeof(ros_message.blue_value);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // Member: green_value
   {
     size_t item_size = sizeof(ros_message.green_value);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: blue_value
+  {
+    size_t item_size = sizeof(ros_message.blue_value);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -214,7 +214,7 @@ max_serialized_size_ItemLog(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
   }
 
-  // Member: blue_value
+  // Member: green_value
   {
     size_t array_size = 1;
 
@@ -223,7 +223,7 @@ max_serialized_size_ItemLog(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
   }
 
-  // Member: green_value
+  // Member: blue_value
   {
     size_t array_size = 1;
 

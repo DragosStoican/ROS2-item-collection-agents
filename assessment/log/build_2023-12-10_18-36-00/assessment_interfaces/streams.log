@@ -1,0 +1,421 @@
+[0.407s] Invoking command in '/home/dragos/AURO/assessment/build/assessment_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragos/AURO/assessment/install/tf_transformations:/home/dragos/AURO/assessment/install/tf_relay:/home/dragos/AURO/assessment/install/solution:/home/dragos/AURO/assessment/install/assessment:/home/dragos/turtlebot3_ws/install/turtlebot3_teleop:/home/dragos/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/dragos/AURO/assessment/src/assessment_interfaces -DCMAKE_INSTALL_PREFIX=/home/dragos/AURO/assessment/install/assessment_interfaces
+[0.533s] -- The C compiler identification is GNU 11.4.0
+[0.937s] -- The CXX compiler identification is GNU 11.4.0
+[1.272s] -- Detecting C compiler ABI info
+[1.405s] -- Detecting C compiler ABI info - done
+[1.411s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.411s] -- Detecting C compile features
+[1.412s] -- Detecting C compile features - done
+[1.414s] -- Detecting CXX compiler ABI info
+[1.553s] -- Detecting CXX compiler ABI info - done
+[1.560s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.560s] -- Detecting CXX compile features
+[1.561s] -- Detecting CXX compile features - done
+[1.565s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.735s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.840s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.846s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.857s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.049s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.348s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.525s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.750s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.871s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.874s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[3.231s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[3.231s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.231s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.231s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.253s] -- Found PythonExtra: .so  
+[3.329s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.360s] -- Added test 'lint_cmake' to check CMake code style
+[3.361s] -- Added test 'xmllint' to check XML markup files
+[3.364s] -- Configuring done
+[3.408s] -- Generating done
+[3.410s] -- Build files have been written to: /home/dragos/AURO/assessment/build/assessment_interfaces
+[3.417s] Invoked command in '/home/dragos/AURO/assessment/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragos/AURO/assessment/install/tf_transformations:/home/dragos/AURO/assessment/install/tf_relay:/home/dragos/AURO/assessment/install/solution:/home/dragos/AURO/assessment/install/assessment:/home/dragos/turtlebot3_ws/install/turtlebot3_teleop:/home/dragos/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake /home/dragos/AURO/assessment/src/assessment_interfaces -DCMAKE_INSTALL_PREFIX=/home/dragos/AURO/assessment/install/assessment_interfaces
+[3.419s] Invoking command in '/home/dragos/AURO/assessment/build/assessment_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragos/AURO/assessment/install/tf_transformations:/home/dragos/AURO/assessment/install/tf_relay:/home/dragos/AURO/assessment/install/solution:/home/dragos/AURO/assessment/install/assessment:/home/dragos/turtlebot3_ws/install/turtlebot3_teleop:/home/dragos/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/dragos/AURO/assessment/build/assessment_interfaces -- -j12 -l12
+[3.456s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.465s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.472s] [  2%] Built target ament_cmake_python_copy_assessment_interfaces
+[3.708s] running egg_info
+[3.709s] creating assessment_interfaces.egg-info
+[3.709s] writing assessment_interfaces.egg-info/PKG-INFO
+[3.709s] writing dependency_links to assessment_interfaces.egg-info/dependency_links.txt
+[3.710s] writing top-level names to assessment_interfaces.egg-info/top_level.txt
+[3.710s] writing manifest file 'assessment_interfaces.egg-info/SOURCES.txt'
+[3.711s] reading manifest file 'assessment_interfaces.egg-info/SOURCES.txt'
+[3.712s] writing manifest file 'assessment_interfaces.egg-info/SOURCES.txt'
+[3.736s] [  2%] Built target ament_cmake_python_build_assessment_interfaces_egg
+[3.970s] [  2%] Built target assessment_interfaces__cpp
+[3.984s] [  3%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.990s] [  4%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.994s] [  5%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[4.037s] [  6%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/item_log__functions.c.o[0m
+[4.037s] [  8%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/item_holder__functions.c.o[0m
+[4.038s] [ 10%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/item_holders__functions.c.o[0m
+[4.038s] [ 10%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/item__functions.c.o[0m
+[4.039s] [ 11%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/item_list__functions.c.o[0m
+[4.040s] [ 12%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/robot__functions.c.o[0m
+[4.040s] [ 14%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/robot_list__functions.c.o[0m
+[4.040s] [ 14%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_c.dir/rosidl_generator_c/assessment_interfaces/msg/detail/home_zone__functions.c.o[0m
+[4.106s] [ 16%] [32m[1mLinking C shared library libassessment_interfaces__rosidl_generator_c.so[0m
+[4.206s] [ 16%] Built target assessment_interfaces__rosidl_generator_c
+[4.215s] [ 19%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.215s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.215s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.412s] [ 22%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/item_log__type_support.cpp.o[0m
+[4.412s] [ 22%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/item_holders__type_support.cpp.o[0m
+[4.413s] [ 22%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/item_holder__type_support.cpp.o[0m
+[4.413s] [ 24%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/item_list__type_support.cpp.o[0m
+[4.413s] [ 25%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/home_zone__type_support.cpp.o[0m
+[4.413s] [ 26%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/item__type_support.cpp.o[0m
+[4.414s] [ 27%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/robot__type_support.cpp.o[0m
+[4.773s] [ 28%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/item_log__type_support.cpp.o[0m
+[4.810s] [ 29%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/item_log__type_support.cpp.o[0m
+[4.823s] [ 31%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/item_log__type_support.cpp.o[0m
+[4.845s] [ 32%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/assessment_interfaces/msg/robot_list__type_support.cpp.o[0m
+[4.848s] [ 34%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/item_holder__type_support.cpp.o[0m
+[4.848s] [ 34%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/item_holder__type_support.cpp.o[0m
+[4.853s] [ 35%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/item_holders__type_support.cpp.o[0m
+[4.853s] [ 36%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/item_holder__type_support.cpp.o[0m
+[4.855s] [ 37%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/item__type_support.cpp.o[0m
+[4.864s] [ 40%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/item_holders__type_support.cpp.o[0m
+[4.864s] [ 40%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/item_holders__type_support.cpp.o[0m
+[4.896s] [ 41%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/item__type_support.cpp.o[0m
+[4.908s] [ 42%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/item__type_support.cpp.o[0m
+[4.956s] [ 43%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/item_list__type_support.cpp.o[0m
+[5.009s] [ 44%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/home_zone__type_support.cpp.o[0m
+[5.056s] [ 45%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/robot__type_support.cpp.o[0m
+[5.096s] [ 47%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/item_log__type_support.c.o[0m
+[5.107s] [ 48%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/assessment_interfaces/msg/robot_list__type_support.cpp.o[0m
+[5.148s] [ 49%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/item_holder__type_support.c.o[0m
+[5.156s] [ 50%] [32m[1mLinking CXX shared library libassessment_interfaces__rosidl_typesupport_c.so[0m
+[5.199s] [ 51%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/item_log__type_support_c.cpp.o[0m
+[5.205s] [ 52%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/item_holders__type_support.c.o[0m
+[5.268s] [ 54%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/item__type_support.c.o[0m
+[5.323s] [ 55%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/item_list__type_support.c.o[0m
+[5.340s] [ 55%] Built target assessment_interfaces__rosidl_typesupport_c
+[5.354s] [ 56%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/item_list__type_support.cpp.o[0m
+[5.360s] [ 57%] [32m[1mLinking CXX shared library libassessment_interfaces__rosidl_typesupport_cpp.so[0m
+[5.386s] [ 58%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/home_zone__type_support.c.o[0m
+[5.458s] [ 59%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/item_list__type_support.cpp.o[0m
+[5.473s] [ 60%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/robot__type_support.c.o[0m
+[5.487s] [ 62%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/home_zone__type_support.cpp.o[0m
+[5.502s] [ 63%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/home_zone__type_support.cpp.o[0m
+[5.531s] [ 64%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/robot__type_support.cpp.o[0m
+[5.532s] [ 65%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/assessment_interfaces/msg/detail/robot_list__type_support.c.o[0m
+[5.534s] [ 66%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/robot__type_support.cpp.o[0m
+[5.541s] [ 66%] Built target assessment_interfaces__rosidl_typesupport_cpp
+[5.553s] [ 67%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/assessment_interfaces/msg/detail/robot_list__type_support.cpp.o[0m
+[5.578s] [ 68%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/assessment_interfaces/msg/detail/dds_fastrtps/robot_list__type_support.cpp.o[0m
+[5.585s] [ 70%] [32m[1mLinking C shared library libassessment_interfaces__rosidl_typesupport_introspection_c.so[0m
+[5.592s] [ 71%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/item_holder__type_support_c.cpp.o[0m
+[5.624s] [ 72%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/item_holders__type_support_c.cpp.o[0m
+[5.762s] [ 72%] Built target assessment_interfaces__rosidl_typesupport_introspection_c
+[5.775s] [ 73%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/item__type_support_c.cpp.o[0m
+[5.803s] [ 74%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/item_list__type_support_c.cpp.o[0m
+[6.121s] [ 75%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/home_zone__type_support_c.cpp.o[0m
+[6.172s] [ 77%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/robot__type_support_c.cpp.o[0m
+[6.179s] [ 78%] [32mBuilding CXX object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/assessment_interfaces/msg/detail/robot_list__type_support_c.cpp.o[0m
+[6.260s] [ 79%] [32m[1mLinking CXX shared library libassessment_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[6.294s] [ 80%] [32m[1mLinking CXX shared library libassessment_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.440s] [ 80%] Built target assessment_interfaces__rosidl_typesupport_introspection_cpp
+[6.474s] [ 80%] Built target assessment_interfaces__rosidl_typesupport_fastrtps_cpp
+[6.590s] [ 81%] [32m[1mLinking CXX shared library libassessment_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[6.727s] [ 81%] Built target assessment_interfaces__rosidl_typesupport_fastrtps_c
+[6.746s] [ 81%] Built target assessment_interfaces
+[6.764s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[7.532s] [ 82%] Built target assessment_interfaces__py
+[7.551s] [ 83%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_item_log_s.c.o[0m
+[7.552s] [ 85%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_item_holder_s.c.o[0m
+[7.553s] [ 87%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_home_zone_s.c.o[0m
+[7.554s] [ 87%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_robot_list_s.c.o[0m
+[7.554s] [ 88%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_item_s.c.o[0m
+[7.554s] [ 89%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_item_list_s.c.o[0m
+[7.554s] [ 90%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_item_holders_s.c.o[0m
+[7.555s] [ 91%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_generator_py.dir/rosidl_generator_py/assessment_interfaces/msg/_robot_s.c.o[0m
+[7.682s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/assessment_interfaces/libassessment_interfaces__rosidl_generator_py.so[0m
+[7.785s] [ 93%] Built target assessment_interfaces__rosidl_generator_py
+[7.803s] [ 95%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.803s] [ 96%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[7.803s] [ 95%] [32mBuilding C object CMakeFiles/assessment_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.901s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.904s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.906s] [100%] [32m[1mLinking C shared library rosidl_generator_py/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.992s] [100%] Built target assessment_interfaces__rosidl_typesupport_c__pyext
+[8.001s] [100%] Built target assessment_interfaces__rosidl_typesupport_introspection_c__pyext
+[8.020s] [100%] Built target assessment_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[8.031s] Invoked command in '/home/dragos/AURO/assessment/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragos/AURO/assessment/install/tf_transformations:/home/dragos/AURO/assessment/install/tf_relay:/home/dragos/AURO/assessment/install/solution:/home/dragos/AURO/assessment/install/assessment:/home/dragos/turtlebot3_ws/install/turtlebot3_teleop:/home/dragos/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/dragos/AURO/assessment/build/assessment_interfaces -- -j12 -l12
+[8.244s] Invoking command in '/home/dragos/AURO/assessment/build/assessment_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragos/AURO/assessment/install/tf_transformations:/home/dragos/AURO/assessment/install/tf_relay:/home/dragos/AURO/assessment/install/solution:/home/dragos/AURO/assessment/install/assessment:/home/dragos/turtlebot3_ws/install/turtlebot3_teleop:/home/dragos/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/dragos/AURO/assessment/build/assessment_interfaces
+[8.251s] -- Install configuration: ""
+[8.252s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/ament_index/resource_index/rosidl_interfaces/assessment_interfaces
+[8.252s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces
+[8.252s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg
+[8.253s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/rosidl_generator_c__visibility_control.h
+[8.253s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_holders.h
+[8.253s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail
+[8.253s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__functions.h
+[8.254s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__functions.h
+[8.254s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__type_support.h
+[8.254s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__struct.h
+[8.254s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__functions.c
+[8.254s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__struct.h
+[8.255s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__type_support.h
+[8.255s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__type_support.h
+[8.255s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__functions.c
+[8.255s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__struct.h
+[8.255s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__functions.c
+[8.256s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__type_support.h
+[8.256s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__functions.h
+[8.256s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__functions.c
+[8.256s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__functions.c
+[8.256s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__functions.h
+[8.257s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__functions.c
+[8.257s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__struct.h
+[8.257s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__struct.h
+[8.257s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__functions.h
+[8.258s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__functions.h
+[8.258s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__type_support.h
+[8.258s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__struct.h
+[8.258s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__functions.c
+[8.258s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__functions.h
+[8.258s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__type_support.h
+[8.258s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__functions.h
+[8.258s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__struct.h
+[8.259s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__type_support.h
+[8.259s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__functions.c
+[8.259s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__struct.h
+[8.259s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__type_support.h
+[8.259s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/robot_list.h
+[8.260s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_holder.h
+[8.260s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/home_zone.h
+[8.260s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item.h
+[8.260s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_log.h
+[8.260s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/robot.h
+[8.260s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_list.h
+[8.261s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/environment/library_path.sh
+[8.261s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/environment/library_path.dsv
+[8.261s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_generator_c.so
+[8.261s] -- Set runtime path of "/home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_generator_c.so" to ""
+[8.261s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces
+[8.261s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg
+[8.262s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail
+[8.262s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__rosidl_typesupport_fastrtps_c.h
+[8.262s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__rosidl_typesupport_fastrtps_c.h
+[8.262s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__rosidl_typesupport_fastrtps_c.h
+[8.262s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__rosidl_typesupport_fastrtps_c.h
+[8.263s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__rosidl_typesupport_fastrtps_c.h
+[8.263s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__rosidl_typesupport_fastrtps_c.h
+[8.263s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__rosidl_typesupport_fastrtps_c.h
+[8.263s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_c.h
+[8.263s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.263s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_fastrtps_c.so
+[8.264s] -- Set runtime path of "/home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[8.264s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces
+[8.264s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg
+[8.264s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail
+[8.264s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__type_support.c
+[8.264s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__rosidl_typesupport_introspection_c.h
+[8.264s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__type_support.c
+[8.265s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__type_support.c
+[8.265s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__rosidl_typesupport_introspection_c.h
+[8.265s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__type_support.c
+[8.265s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__rosidl_typesupport_introspection_c.h
+[8.265s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__rosidl_typesupport_introspection_c.h
+[8.266s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__rosidl_typesupport_introspection_c.h
+[8.266s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__type_support.c
+[8.266s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__type_support.c
+[8.266s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__type_support.c
+[8.266s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__type_support.c
+[8.266s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__rosidl_typesupport_introspection_c.h
+[8.267s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__rosidl_typesupport_introspection_c.h
+[8.267s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__rosidl_typesupport_introspection_c.h
+[8.267s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.267s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_introspection_c.so
+[8.268s] -- Set runtime path of "/home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[8.268s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_c.so
+[8.268s] -- Set runtime path of "/home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_c.so" to ""
+[8.268s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces
+[8.269s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg
+[8.269s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_holders.hpp
+[8.269s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/robot.hpp
+[8.269s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail
+[8.270s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__struct.hpp
+[8.270s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__builder.hpp
+[8.270s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__traits.hpp
+[8.270s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__struct.hpp
+[8.270s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__struct.hpp
+[8.271s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__builder.hpp
+[8.271s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__traits.hpp
+[8.271s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__builder.hpp
+[8.271s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__builder.hpp
+[8.271s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__struct.hpp
+[8.271s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__traits.hpp
+[8.272s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__traits.hpp
+[8.272s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__builder.hpp
+[8.272s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__struct.hpp
+[8.272s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__builder.hpp
+[8.272s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__struct.hpp
+[8.272s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__traits.hpp
+[8.273s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__struct.hpp
+[8.273s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__traits.hpp
+[8.273s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__traits.hpp
+[8.273s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__builder.hpp
+[8.273s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__struct.hpp
+[8.273s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__builder.hpp
+[8.273s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__traits.hpp
+[8.273s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_log.hpp
+[8.274s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item.hpp
+[8.274s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/home_zone.hpp
+[8.274s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/robot_list.hpp
+[8.274s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_holder.hpp
+[8.274s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/item_list.hpp
+[8.274s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces
+[8.274s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg
+[8.274s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail
+[8.275s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__rosidl_typesupport_fastrtps_cpp.hpp
+[8.275s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/dds_fastrtps
+[8.275s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__rosidl_typesupport_fastrtps_cpp.hpp
+[8.275s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__rosidl_typesupport_fastrtps_cpp.hpp
+[8.275s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__rosidl_typesupport_fastrtps_cpp.hpp
+[8.275s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__rosidl_typesupport_fastrtps_cpp.hpp
+[8.276s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__rosidl_typesupport_fastrtps_cpp.hpp
+[8.276s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__rosidl_typesupport_fastrtps_cpp.hpp
+[8.276s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__rosidl_typesupport_fastrtps_cpp.hpp
+[8.276s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.276s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[8.277s] -- Set runtime path of "/home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.277s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces
+[8.277s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg
+[8.277s] -- Up-to-date: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail
+[8.277s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__type_support.cpp
+[8.277s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__type_support.cpp
+[8.278s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__rosidl_typesupport_introspection_cpp.hpp
+[8.278s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__rosidl_typesupport_introspection_cpp.hpp
+[8.278s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__rosidl_typesupport_introspection_cpp.hpp
+[8.278s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot_list__rosidl_typesupport_introspection_cpp.hpp
+[8.278s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__rosidl_typesupport_introspection_cpp.hpp
+[8.279s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_list__type_support.cpp
+[8.279s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holder__type_support.cpp
+[8.279s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/robot__type_support.cpp
+[8.279s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__type_support.cpp
+[8.279s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_log__rosidl_typesupport_introspection_cpp.hpp
+[8.280s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/home_zone__type_support.cpp
+[8.280s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__rosidl_typesupport_introspection_cpp.hpp
+[8.280s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item__type_support.cpp
+[8.280s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/include/assessment_interfaces/assessment_interfaces/msg/detail/item_holders__rosidl_typesupport_introspection_cpp.hpp
+[8.280s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_introspection_cpp.so
+[8.280s] -- Set runtime path of "/home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[8.280s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_cpp.so
+[8.280s] -- Set runtime path of "/home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_typesupport_cpp.so" to ""
+[8.280s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/environment/pythonpath.sh
+[8.280s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/environment/pythonpath.dsv
+[8.280s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_log_s.c
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item.py
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_s.c
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_list_s.c
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_home_zone.py
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holder.py
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/__init__.py
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holders.py
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot_list_s.c
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot_s.c
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_home_zone_s.c
+[8.281s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_log.py
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot_list.py
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holders_s.c
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holder_s.c
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_list.py
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot.py
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/__init__.py
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/libassessment_interfaces__rosidl_generator_py.so
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_c.c
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.282s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/_assessment_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.320s] Listing '/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces'...
+[8.320s] Compiling '/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/__init__.py'...
+[8.320s] Listing '/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg'...
+[8.320s] Compiling '/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/__init__.py'...
+[8.320s] Compiling '/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_home_zone.py'...
+[8.320s] Compiling '/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item.py'...
+[8.320s] Compiling '/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holder.py'...
+[8.320s] Compiling '/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_holders.py'...
+[8.320s] Compiling '/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_list.py'...
+[8.320s] Compiling '/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_item_log.py'...
+[8.320s] Compiling '/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot.py'...
+[8.320s] Compiling '/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/msg/_robot_list.py'...
+[8.324s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.325s] -- Set runtime path of "/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.325s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.325s] -- Set runtime path of "/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.325s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.326s] -- Set runtime path of "/home/dragos/AURO/assessment/install/assessment_interfaces/local/lib/python3.10/dist-packages/assessment_interfaces/assessment_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.326s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_generator_py.so
+[8.326s] -- Set runtime path of "/home/dragos/AURO/assessment/install/assessment_interfaces/lib/libassessment_interfaces__rosidl_generator_py.so" to ""
+[8.327s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/ItemLog.idl
+[8.327s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/ItemHolder.idl
+[8.327s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/ItemHolders.idl
+[8.327s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/Item.idl
+[8.327s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/ItemList.idl
+[8.328s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/HomeZone.idl
+[8.328s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/Robot.idl
+[8.328s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/RobotList.idl
+[8.328s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/ItemLog.msg
+[8.328s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/ItemHolder.msg
+[8.328s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/ItemHolders.msg
+[8.328s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/Item.msg
+[8.329s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/ItemList.msg
+[8.329s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/HomeZone.msg
+[8.329s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/Robot.msg
+[8.329s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/msg/RobotList.msg
+[8.329s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/ament_index/resource_index/package_run_dependencies/assessment_interfaces
+[8.329s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/ament_index/resource_index/parent_prefix_path/assessment_interfaces
+[8.330s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/environment/ament_prefix_path.sh
+[8.330s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/environment/ament_prefix_path.dsv
+[8.330s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/environment/path.sh
+[8.330s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/environment/path.dsv
+[8.330s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/local_setup.bash
+[8.330s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/local_setup.sh
+[8.331s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/local_setup.zsh
+[8.331s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/local_setup.dsv
+[8.331s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/package.dsv
+[8.331s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/ament_index/resource_index/packages/assessment_interfaces
+[8.331s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_cExport.cmake
+[8.331s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_cExport-noconfig.cmake
+[8.332s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[8.332s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.332s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[8.332s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.332s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_cExport.cmake
+[8.332s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[8.333s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_cppExport.cmake
+[8.333s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.333s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.333s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[8.333s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.333s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_cppExport.cmake
+[8.333s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[8.334s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_pyExport.cmake
+[8.334s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/export_assessment_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[8.334s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/rosidl_cmake-extras.cmake
+[8.334s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.334s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[8.334s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[8.335s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.335s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.335s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.335s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfacesConfig.cmake
+[8.335s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/cmake/assessment_interfacesConfig-version.cmake
+[8.335s] -- Installing: /home/dragos/AURO/assessment/install/assessment_interfaces/share/assessment_interfaces/package.xml
+[8.338s] Invoked command in '/home/dragos/AURO/assessment/build/assessment_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragos/AURO/assessment/install/tf_transformations:/home/dragos/AURO/assessment/install/tf_relay:/home/dragos/AURO/assessment/install/solution:/home/dragos/AURO/assessment/install/assessment:/home/dragos/turtlebot3_ws/install/turtlebot3_teleop:/home/dragos/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/dragos/AURO/assessment/build/assessment_interfaces

@@ -1,16 +1,18 @@
-/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/robot_controller.py
-/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/__init__.py
-/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/__pycache__/robot_controller.cpython-310.pyc
-/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/__pycache__/__init__.cpython-310.pyc
-/home/userfs/d/ds1473/AURO/assessment/install/solution/share/ament_index/resource_index/packages/solution
-/home/userfs/d/ds1473/AURO/assessment/install/solution/share/solution/package.xml
-/home/userfs/d/ds1473/AURO/assessment/install/solution/share/solution/launch/solution_launch.py
-/home/userfs/d/ds1473/AURO/assessment/install/solution/share/solution/launch/solution_nav2_launch.py
-/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/PKG-INFO
-/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/zip-safe
-/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/dependency_links.txt
-/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/entry_points.txt
-/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/requires.txt
-/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/top_level.txt
-/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/SOURCES.txt
-/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/solution/robot_controller
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/robot_controller.py
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/__init__.py
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/robot_controller copy.py
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/__pycache__/robot_controller.cpython-310.pyc
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/__pycache__/__init__.cpython-310.pyc
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/__pycache__/robot_controller copy.cpython-310.pyc
+/home/dragos/AURO/assessment/install/solution/share/ament_index/resource_index/packages/solution
+/home/dragos/AURO/assessment/install/solution/share/solution/package.xml
+/home/dragos/AURO/assessment/install/solution/share/solution/launch/solution_launch.py
+/home/dragos/AURO/assessment/install/solution/share/solution/launch/solution_nav2_launch.py
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/top_level.txt
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/zip-safe
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/entry_points.txt
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/requires.txt
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/dependency_links.txt
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/PKG-INFO
+/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info/SOURCES.txt
+/home/dragos/AURO/assessment/install/solution/lib/solution/robot_controller

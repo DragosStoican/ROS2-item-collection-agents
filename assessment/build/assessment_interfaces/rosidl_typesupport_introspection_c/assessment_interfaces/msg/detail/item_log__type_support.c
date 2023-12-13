@@ -118,14 +118,14 @@ static rosidl_typesupport_introspection_c__MessageMember assessment_interfaces__
     NULL  // resize(index) function pointer
   },
   {
-    "blue_value",  // name
+    "green_value",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(assessment_interfaces__msg__ItemLog, blue_value),  // bytes offset in struct
+    offsetof(assessment_interfaces__msg__ItemLog, green_value),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -135,14 +135,14 @@ static rosidl_typesupport_introspection_c__MessageMember assessment_interfaces__
     NULL  // resize(index) function pointer
   },
   {
-    "green_value",  // name
+    "blue_value",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(assessment_interfaces__msg__ItemLog, green_value),  // bytes offset in struct
+    offsetof(assessment_interfaces__msg__ItemLog, blue_value),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

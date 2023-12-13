@@ -1,3 +1,7 @@
+ps -ef | grep -i ros
+kill -9 pid
+ros2 run turtlebot3_gazebo turtlebot3_drive --ros-args --remap __ns:=/robot1
+
 All robots should publish known location of clusters
 -> /clusters topic sau service sau ceva de genu
 

@@ -12,7 +12,7 @@ from launch_ros.actions import Node, SetParameter
 
 def generate_launch_description():
 
-    num_robots = 3
+    num_robots = 1
     rviz_config = PathJoinSubstitution([FindPackageShare('assessment'), 'rviz', 'namespaced.rviz'])
 
     yaml_path = os.path.join(get_package_share_directory('assessment'), 'config', 'initial_poses.yaml')
@@ -69,7 +69,7 @@ def generate_launch_description():
 
     ld.add_action(assessment_cmd)
 
-    ld.add_action(TimerAction(period=10.0, actions=robot_controller_cmd))
+    ld.add_action(TimerAction(period=30.0, actions=robot_controller_cmd))
 
     # for cmd in robot_controller_cmd:
     #     ld.add_action(cmd)

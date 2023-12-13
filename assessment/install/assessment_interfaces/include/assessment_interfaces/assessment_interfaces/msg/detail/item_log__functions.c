@@ -22,8 +22,8 @@ assessment_interfaces__msg__ItemLog__init(assessment_interfaces__msg__ItemLog * 
   // blue_count
   // total_count
   // red_value
-  // blue_value
   // green_value
+  // blue_value
   // total_value
   return true;
 }
@@ -39,8 +39,8 @@ assessment_interfaces__msg__ItemLog__fini(assessment_interfaces__msg__ItemLog * 
   // blue_count
   // total_count
   // red_value
-  // blue_value
   // green_value
+  // blue_value
   // total_value
 }
 
@@ -70,12 +70,12 @@ assessment_interfaces__msg__ItemLog__are_equal(const assessment_interfaces__msg_
   if (lhs->red_value != rhs->red_value) {
     return false;
   }
-  // blue_value
-  if (lhs->blue_value != rhs->blue_value) {
-    return false;
-  }
   // green_value
   if (lhs->green_value != rhs->green_value) {
+    return false;
+  }
+  // blue_value
+  if (lhs->blue_value != rhs->blue_value) {
     return false;
   }
   // total_value
@@ -103,10 +103,10 @@ assessment_interfaces__msg__ItemLog__copy(
   output->total_count = input->total_count;
   // red_value
   output->red_value = input->red_value;
-  // blue_value
-  output->blue_value = input->blue_value;
   // green_value
   output->green_value = input->green_value;
+  // blue_value
+  output->blue_value = input->blue_value;
   // total_value
   output->total_value = input->total_value;
   return true;

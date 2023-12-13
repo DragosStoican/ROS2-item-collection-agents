@@ -1,8 +1,8 @@
-# Install script for directory: /home/userfs/d/ds1473/AURO/assessment/build/assessment_interfaces/assessment_interfaces__py
+# Install script for directory: /home/dragos/AURO/assessment/build/assessment_interfaces/assessment_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/userfs/d/ds1473/AURO/assessment/install/assessment_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/dragos/AURO/assessment/install/assessment_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

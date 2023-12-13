@@ -124,14 +124,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ItemLog_messa
     nullptr  // resize(index) function pointer
   },
   {
-    "blue_value",  // name
+    "green_value",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(assessment_interfaces::msg::ItemLog, blue_value),  // bytes offset in struct
+    offsetof(assessment_interfaces::msg::ItemLog, green_value),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -141,14 +141,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ItemLog_messa
     nullptr  // resize(index) function pointer
   },
   {
-    "green_value",  // name
+    "blue_value",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT16,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(assessment_interfaces::msg::ItemLog, green_value),  // bytes offset in struct
+    offsetof(assessment_interfaces::msg::ItemLog, blue_value),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

@@ -43,8 +43,8 @@ struct ItemLog_
       this->blue_count = 0;
       this->total_count = 0;
       this->red_value = 0;
-      this->blue_value = 0;
       this->green_value = 0;
+      this->blue_value = 0;
       this->total_value = 0;
     }
   }
@@ -60,8 +60,8 @@ struct ItemLog_
       this->blue_count = 0;
       this->total_count = 0;
       this->red_value = 0;
-      this->blue_value = 0;
       this->green_value = 0;
+      this->blue_value = 0;
       this->total_value = 0;
     }
   }
@@ -82,12 +82,12 @@ struct ItemLog_
   using _red_value_type =
     uint16_t;
   _red_value_type red_value;
-  using _blue_value_type =
-    uint16_t;
-  _blue_value_type blue_value;
   using _green_value_type =
     uint16_t;
   _green_value_type green_value;
+  using _blue_value_type =
+    uint16_t;
+  _blue_value_type blue_value;
   using _total_value_type =
     uint16_t;
   _total_value_type total_value;
@@ -123,16 +123,16 @@ struct ItemLog_
     this->red_value = _arg;
     return *this;
   }
-  Type & set__blue_value(
-    const uint16_t & _arg)
-  {
-    this->blue_value = _arg;
-    return *this;
-  }
   Type & set__green_value(
     const uint16_t & _arg)
   {
     this->green_value = _arg;
+    return *this;
+  }
+  Type & set__blue_value(
+    const uint16_t & _arg)
+  {
+    this->blue_value = _arg;
     return *this;
   }
   Type & set__total_value(
@@ -199,10 +199,10 @@ struct ItemLog_
     if (this->red_value != other.red_value) {
       return false;
     }
-    if (this->blue_value != other.blue_value) {
+    if (this->green_value != other.green_value) {
       return false;
     }
-    if (this->green_value != other.green_value) {
+    if (this->blue_value != other.blue_value) {
       return false;
     }
     if (this->total_value != other.total_value) {

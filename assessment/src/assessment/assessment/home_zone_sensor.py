@@ -65,7 +65,7 @@ class HomeZoneSensor(Node):
 
             text = "HOME"
             font = cv2.FONT_HERSHEY_SIMPLEX
-            font_scrviz_laale = 1
+            font_scale = 1
             font_thickness = 2
             text_size = cv2.getTextSize(text, font, font_scale, font_thickness)[0]
             text_position = (int(centre_x - text_size[0] / 2), int(centre_y + text_size[1] * 2))

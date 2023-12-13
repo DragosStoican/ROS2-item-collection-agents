@@ -95,15 +95,6 @@ bool assessment_interfaces__msg__item_log__convert_from_py(PyObject * _pymsg, vo
     ros_message->red_value = (uint16_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
-  {  // blue_value
-    PyObject * field = PyObject_GetAttrString(_pymsg, "blue_value");
-    if (!field) {
-      return false;
-    }
-    assert(PyLong_Check(field));
-    ros_message->blue_value = (uint16_t)PyLong_AsUnsignedLong(field);
-    Py_DECREF(field);
-  }
   {  // green_value
     PyObject * field = PyObject_GetAttrString(_pymsg, "green_value");
     if (!field) {
@@ -111,6 +102,15 @@ bool assessment_interfaces__msg__item_log__convert_from_py(PyObject * _pymsg, vo
     }
     assert(PyLong_Check(field));
     ros_message->green_value = (uint16_t)PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
+  {  // blue_value
+    PyObject * field = PyObject_GetAttrString(_pymsg, "blue_value");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->blue_value = (uint16_t)PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
   {  // total_value
@@ -199,22 +199,22 @@ PyObject * assessment_interfaces__msg__item_log__convert_to_py(void * raw_ros_me
       }
     }
   }
-  {  // blue_value
+  {  // green_value
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->blue_value);
+    field = PyLong_FromUnsignedLong(ros_message->green_value);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "blue_value", field);
+      int rc = PyObject_SetAttrString(_pymessage, "green_value", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // green_value
+  {  // blue_value
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->green_value);
+    field = PyLong_FromUnsignedLong(ros_message->blue_value);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "green_value", field);
+      int rc = PyObject_SetAttrString(_pymessage, "blue_value", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

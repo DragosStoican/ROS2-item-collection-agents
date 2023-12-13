@@ -15,6 +15,7 @@ assessment/item_sensor.py
 assessment/robot_sensor.py
 config/initial_poses.yaml
 launch/assessment_launch.py
+launch/bringup_launch.py
 launch/rviz_launch.py
 launch/spawn_robot_launch.py
 maps/assessment_world.pgm

@@ -60,8 +60,8 @@ class ItemLog(metaclass=Metaclass_ItemLog):
         '_blue_count',
         '_total_count',
         '_red_value',
-        '_blue_value',
         '_green_value',
+        '_blue_value',
         '_total_value',
     ]
 
@@ -71,8 +71,8 @@ class ItemLog(metaclass=Metaclass_ItemLog):
         'blue_count': 'uint16',
         'total_count': 'uint16',
         'red_value': 'uint16',
-        'blue_value': 'uint16',
         'green_value': 'uint16',
+        'blue_value': 'uint16',
         'total_value': 'uint16',
     }
 
@@ -96,8 +96,8 @@ class ItemLog(metaclass=Metaclass_ItemLog):
         self.blue_count = kwargs.get('blue_count', int())
         self.total_count = kwargs.get('total_count', int())
         self.red_value = kwargs.get('red_value', int())
-        self.blue_value = kwargs.get('blue_value', int())
         self.green_value = kwargs.get('green_value', int())
+        self.blue_value = kwargs.get('blue_value', int())
         self.total_value = kwargs.get('total_value', int())
 
     def __repr__(self):
@@ -139,9 +139,9 @@ class ItemLog(metaclass=Metaclass_ItemLog):
             return False
         if self.red_value != other.red_value:
             return False
-        if self.blue_value != other.blue_value:
-            return False
         if self.green_value != other.green_value:
+            return False
+        if self.blue_value != other.blue_value:
             return False
         if self.total_value != other.total_value:
             return False
@@ -228,21 +228,6 @@ class ItemLog(metaclass=Metaclass_ItemLog):
         self._red_value = value
 
     @builtins.property
-    def blue_value(self):
-        """Message field 'blue_value'."""
-        return self._blue_value
-
-    @blue_value.setter
-    def blue_value(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, int), \
-                "The 'blue_value' field must be of type 'int'"
-            assert value >= 0 and value < 65536, \
-                "The 'blue_value' field must be an unsigned integer in [0, 65535]"
-        self._blue_value = value
-
-    @builtins.property
     def green_value(self):
         """Message field 'green_value'."""
         return self._green_value
@@ -256,6 +241,21 @@ class ItemLog(metaclass=Metaclass_ItemLog):
             assert value >= 0 and value < 65536, \
                 "The 'green_value' field must be an unsigned integer in [0, 65535]"
         self._green_value = value
+
+    @builtins.property
+    def blue_value(self):
+        """Message field 'blue_value'."""
+        return self._blue_value
+
+    @blue_value.setter
+    def blue_value(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, int), \
+                "The 'blue_value' field must be of type 'int'"
+            assert value >= 0 and value < 65536, \
+                "The 'blue_value' field must be an unsigned integer in [0, 65535]"
+        self._blue_value = value
 
     @builtins.property
     def total_value(self):

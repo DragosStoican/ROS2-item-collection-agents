@@ -74,14 +74,14 @@ static bool _ItemLog__cdr_serialize(
     cdr << ros_message->red_value;
   }
 
-  // Field name: blue_value
-  {
-    cdr << ros_message->blue_value;
-  }
-
   // Field name: green_value
   {
     cdr << ros_message->green_value;
+  }
+
+  // Field name: blue_value
+  {
+    cdr << ros_message->blue_value;
   }
 
   // Field name: total_value
@@ -126,14 +126,14 @@ static bool _ItemLog__cdr_deserialize(
     cdr >> ros_message->red_value;
   }
 
-  // Field name: blue_value
-  {
-    cdr >> ros_message->blue_value;
-  }
-
   // Field name: green_value
   {
     cdr >> ros_message->green_value;
+  }
+
+  // Field name: blue_value
+  {
+    cdr >> ros_message->blue_value;
   }
 
   // Field name: total_value
@@ -188,15 +188,15 @@ size_t get_serialized_size_assessment_interfaces__msg__ItemLog(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name blue_value
-  {
-    size_t item_size = sizeof(ros_message->blue_value);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
   // field.name green_value
   {
     size_t item_size = sizeof(ros_message->green_value);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name blue_value
+  {
+    size_t item_size = sizeof(ros_message->blue_value);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -275,7 +275,7 @@ size_t max_serialized_size_assessment_interfaces__msg__ItemLog(
     current_alignment += array_size * sizeof(uint16_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
   }
-  // member: blue_value
+  // member: green_value
   {
     size_t array_size = 1;
 
@@ -283,7 +283,7 @@ size_t max_serialized_size_assessment_interfaces__msg__ItemLog(
     current_alignment += array_size * sizeof(uint16_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint16_t));
   }
-  // member: green_value
+  // member: blue_value
   {
     size_t array_size = 1;
 

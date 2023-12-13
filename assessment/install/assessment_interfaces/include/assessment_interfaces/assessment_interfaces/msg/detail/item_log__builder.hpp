@@ -37,15 +37,15 @@ private:
   ::assessment_interfaces::msg::ItemLog msg_;
 };
 
-class Init_ItemLog_green_value
+class Init_ItemLog_blue_value
 {
 public:
-  explicit Init_ItemLog_green_value(::assessment_interfaces::msg::ItemLog & msg)
+  explicit Init_ItemLog_blue_value(::assessment_interfaces::msg::ItemLog & msg)
   : msg_(msg)
   {}
-  Init_ItemLog_total_value green_value(::assessment_interfaces::msg::ItemLog::_green_value_type arg)
+  Init_ItemLog_total_value blue_value(::assessment_interfaces::msg::ItemLog::_blue_value_type arg)
   {
-    msg_.green_value = std::move(arg);
+    msg_.blue_value = std::move(arg);
     return Init_ItemLog_total_value(msg_);
   }
 
@@ -53,16 +53,16 @@ private:
   ::assessment_interfaces::msg::ItemLog msg_;
 };
 
-class Init_ItemLog_blue_value
+class Init_ItemLog_green_value
 {
 public:
-  explicit Init_ItemLog_blue_value(::assessment_interfaces::msg::ItemLog & msg)
+  explicit Init_ItemLog_green_value(::assessment_interfaces::msg::ItemLog & msg)
   : msg_(msg)
   {}
-  Init_ItemLog_green_value blue_value(::assessment_interfaces::msg::ItemLog::_blue_value_type arg)
+  Init_ItemLog_blue_value green_value(::assessment_interfaces::msg::ItemLog::_green_value_type arg)
   {
-    msg_.blue_value = std::move(arg);
-    return Init_ItemLog_green_value(msg_);
+    msg_.green_value = std::move(arg);
+    return Init_ItemLog_blue_value(msg_);
   }
 
 private:
@@ -75,10 +75,10 @@ public:
   explicit Init_ItemLog_red_value(::assessment_interfaces::msg::ItemLog & msg)
   : msg_(msg)
   {}
-  Init_ItemLog_blue_value red_value(::assessment_interfaces::msg::ItemLog::_red_value_type arg)
+  Init_ItemLog_green_value red_value(::assessment_interfaces::msg::ItemLog::_red_value_type arg)
   {
     msg_.red_value = std::move(arg);
-    return Init_ItemLog_blue_value(msg_);
+    return Init_ItemLog_green_value(msg_);
   }
 
 private:

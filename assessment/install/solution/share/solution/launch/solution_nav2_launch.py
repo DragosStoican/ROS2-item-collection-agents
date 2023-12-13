@@ -11,7 +11,7 @@ from launch_ros.actions import Node, SetParameter
 
 def generate_launch_description():
 
-    num_robots = 3
+    num_robots = 1
     rviz_config = PathJoinSubstitution([FindPackageShare('assessment'), 'rviz', 'namespaced_nav2.rviz'])
     map = PathJoinSubstitution([FindPackageShare('assessment'), 'maps', 'assessment_world.yaml'])
     params = PathJoinSubstitution([FindPackageShare('assessment'), 'params', 'nav2_params_namespaced.yaml'])

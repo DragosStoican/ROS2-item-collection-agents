@@ -25,8 +25,8 @@ typedef struct assessment_interfaces__msg__ItemLog
   uint16_t blue_count;
   uint16_t total_count;
   uint16_t red_value;
-  uint16_t blue_value;
   uint16_t green_value;
+  uint16_t blue_value;
   uint16_t total_value;
 } assessment_interfaces__msg__ItemLog;
 
