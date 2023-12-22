@@ -472,7 +472,7 @@
       <robot_base_frame>base_footprint</robot_base_frame>
       
       
-      <odometry_source>0</odometry_source>
+      <odometry_source>1</odometry_source>
 
     </plugin>
 

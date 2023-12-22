@@ -33,7 +33,7 @@ def generate_launch_description():
         ),
         launch_arguments={'num_robots': str(num_robots),
                           'visualise_sensors': 'false',
-                          'odometry_source': 'ENCODER',
+                          'odometry_source': 'WORLD',
                           'sensor_noise': 'false',
                           'use_rviz': 'true',
                           'rviz_config': rviz_config,
@@ -63,11 +63,19 @@ def generate_launch_description():
         robot_controller_cmd.append(node)
 
 
+    start_cluster_manager = Node(
+        package='solution',
+        executable='cluster_manager',
+        output='screen',
+    )
+
     ld = LaunchDescription()
 
     ld.add_action(SetParameter(name='use_sim_time', value=True))
 
     ld.add_action(assessment_cmd)
+
+    ld.add_action(start_cluster_manager)
 
     for cmd in robot_controller_cmd:
         ld.add_action(cmd)

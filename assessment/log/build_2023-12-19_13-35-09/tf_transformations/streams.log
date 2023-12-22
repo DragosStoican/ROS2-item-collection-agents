@@ -1,0 +1,22 @@
+[1.902s] Invoking command in '/home/dragos/AURO/assessment/src/tf_transformations': PYTHONPATH=/home/dragos/AURO/assessment/build/tf_transformations/prefix_override:/home/dragos/AURO/assessment/install/tf_transformations/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tf_transformations build --build-base /home/dragos/AURO/assessment/build/tf_transformations/build install --record /home/dragos/AURO/assessment/build/tf_transformations/install.log --single-version-externally-managed
+[2.256s] running egg_info
+[2.257s] writing ../../build/tf_transformations/tf_transformations.egg-info/PKG-INFO
+[2.257s] writing dependency_links to ../../build/tf_transformations/tf_transformations.egg-info/dependency_links.txt
+[2.258s] writing requirements to ../../build/tf_transformations/tf_transformations.egg-info/requires.txt
+[2.258s] writing top-level names to ../../build/tf_transformations/tf_transformations.egg-info/top_level.txt
+[2.261s] reading manifest file '../../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'
+[2.262s] adding license file 'LICENSE'
+[2.262s] writing manifest file '../../build/tf_transformations/tf_transformations.egg-info/SOURCES.txt'
+[2.263s] running build
+[2.263s] running build_py
+[2.263s] running install
+[2.263s] running install_lib
+[2.264s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.264s]   warnings.warn(
+[2.264s] running install_data
+[2.264s] running install_egg_info
+[2.266s] removing '/home/dragos/AURO/assessment/install/tf_transformations/lib/python3.10/site-packages/tf_transformations-1.0.2-py3.10.egg-info' (and everything under it)
+[2.267s] Copying ../../build/tf_transformations/tf_transformations.egg-info to /home/dragos/AURO/assessment/install/tf_transformations/lib/python3.10/site-packages/tf_transformations-1.0.2-py3.10.egg-info
+[2.268s] running install_scripts
+[2.291s] writing list of installed files to '/home/dragos/AURO/assessment/build/tf_transformations/install.log'
+[2.442s] Invoked command in '/home/dragos/AURO/assessment/src/tf_transformations' returned '0': PYTHONPATH=/home/dragos/AURO/assessment/build/tf_transformations/prefix_override:/home/dragos/AURO/assessment/install/tf_transformations/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tf_transformations build --build-base /home/dragos/AURO/assessment/build/tf_transformations/build install --record /home/dragos/AURO/assessment/build/tf_transformations/install.log --single-version-externally-managed

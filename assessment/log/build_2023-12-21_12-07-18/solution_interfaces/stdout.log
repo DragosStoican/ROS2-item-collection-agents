@@ -1,0 +1,16 @@
+running egg_info
+creating ../../build/solution_interfaces/solution_interfaces.egg-info
+writing ../../build/solution_interfaces/solution_interfaces.egg-info/PKG-INFO
+writing dependency_links to ../../build/solution_interfaces/solution_interfaces.egg-info/dependency_links.txt
+writing entry points to ../../build/solution_interfaces/solution_interfaces.egg-info/entry_points.txt
+writing requirements to ../../build/solution_interfaces/solution_interfaces.egg-info/requires.txt
+writing top-level names to ../../build/solution_interfaces/solution_interfaces.egg-info/top_level.txt
+writing manifest file '../../build/solution_interfaces/solution_interfaces.egg-info/SOURCES.txt'
+reading manifest file '../../build/solution_interfaces/solution_interfaces.egg-info/SOURCES.txt'
+writing manifest file '../../build/solution_interfaces/solution_interfaces.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+creating /home/dragos/AURO/assessment/install/solution_interfaces/share/ament_index
+creating /home/dragos/AURO/assessment/install/solution_interfaces/share/ament_index/resource_index
+creating /home/dragos/AURO/assessment/install/solution_interfaces/share/ament_index/resource_index/packages

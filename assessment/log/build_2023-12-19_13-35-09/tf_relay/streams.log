@@ -1,0 +1,23 @@
+[2.006s] Invoking command in '/home/dragos/AURO/assessment/src/tf_relay': PYTHONPATH=/home/dragos/AURO/assessment/build/tf_relay/prefix_override:/home/dragos/AURO/assessment/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tf_relay build --build-base /home/dragos/AURO/assessment/build/tf_relay/build install --record /home/dragos/AURO/assessment/build/tf_relay/install.log --single-version-externally-managed
+[2.332s] running egg_info
+[2.333s] writing ../../build/tf_relay/tf_relay.egg-info/PKG-INFO
+[2.334s] writing dependency_links to ../../build/tf_relay/tf_relay.egg-info/dependency_links.txt
+[2.334s] writing entry points to ../../build/tf_relay/tf_relay.egg-info/entry_points.txt
+[2.334s] writing requirements to ../../build/tf_relay/tf_relay.egg-info/requires.txt
+[2.334s] writing top-level names to ../../build/tf_relay/tf_relay.egg-info/top_level.txt
+[2.336s] reading manifest file '../../build/tf_relay/tf_relay.egg-info/SOURCES.txt'
+[2.338s] writing manifest file '../../build/tf_relay/tf_relay.egg-info/SOURCES.txt'
+[2.338s] running build
+[2.339s] running build_py
+[2.339s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.339s]   warnings.warn(
+[2.339s] running install
+[2.339s] running install_lib
+[2.341s] running install_data
+[2.342s] running install_egg_info
+[2.344s] removing '/home/dragos/AURO/assessment/install/tf_relay/lib/python3.10/site-packages/tf_relay-0.0.0-py3.10.egg-info' (and everything under it)
+[2.345s] Copying ../../build/tf_relay/tf_relay.egg-info to /home/dragos/AURO/assessment/install/tf_relay/lib/python3.10/site-packages/tf_relay-0.0.0-py3.10.egg-info
+[2.347s] running install_scripts
+[2.371s] Installing relay script to /home/dragos/AURO/assessment/install/tf_relay/lib/tf_relay
+[2.372s] writing list of installed files to '/home/dragos/AURO/assessment/build/tf_relay/install.log'
+[2.479s] Invoked command in '/home/dragos/AURO/assessment/src/tf_relay' returned '0': PYTHONPATH=/home/dragos/AURO/assessment/build/tf_relay/prefix_override:/home/dragos/AURO/assessment/install/tf_relay/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tf_relay build --build-base /home/dragos/AURO/assessment/build/tf_relay/build install --record /home/dragos/AURO/assessment/build/tf_relay/install.log --single-version-externally-managed

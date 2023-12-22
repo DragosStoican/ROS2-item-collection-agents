@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from solution_interfaces/srv/GetClusters.srv
+// generated code does not contain a copyright notice
+
+#include "solution_interfaces/msg/WorldItem.idl"
+
+module solution_interfaces {
+  module srv {
+    struct GetClusters_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetClusters_Response {
+      sequence<solution_interfaces::msg::WorldItem> clusters;
+    };
+  };
+};

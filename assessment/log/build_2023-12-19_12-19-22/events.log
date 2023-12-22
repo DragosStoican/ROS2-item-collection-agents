@@ -1,0 +1,7 @@
+[0.000000] (-) TimerEvent: {}
+[0.000796] (-) JobUnselected: {'identifier': 'assessment'}
+[0.000826] (-) JobUnselected: {'identifier': 'assessment_interfaces'}
+[0.000843] (-) JobUnselected: {'identifier': 'solution'}
+[0.000859] (-) JobUnselected: {'identifier': 'tf_relay'}
+[0.000873] (-) JobUnselected: {'identifier': 'tf_transformations'}
+[0.000912] (-) EventReactorShutdown: {}

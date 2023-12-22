@@ -1,0 +1,314 @@
+[0.398s] Invoking command in '/home/dragos/AURO/assessment/build/solution_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragos/AURO/assessment/install/tf_transformations:/home/dragos/AURO/assessment/install/tf_relay:/home/dragos/AURO/assessment/install/solution:/home/dragos/AURO/assessment/install/assessment:/home/dragos/turtlebot3_ws/install/turtlebot3_teleop:/home/dragos/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/dragos/AURO/assessment/build/solution_interfaces -- -j12 -l12
+[0.421s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.562s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.565s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.568s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.741s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.016s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.196s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.426s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.449s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.471s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.471s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.471s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.488s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.500s] -- Added test 'lint_cmake' to check CMake code style
+[1.501s] -- Added test 'xmllint' to check XML markup files
+[1.503s] -- Configuring done
+[1.557s] -- Generating done
+[1.561s] -- Build files have been written to: /home/dragos/AURO/assessment/build/solution_interfaces
+[1.585s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.594s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.610s] [  5%] Built target ament_cmake_python_copy_solution_interfaces
+[1.883s] running egg_info
+[1.884s] writing solution_interfaces.egg-info/PKG-INFO
+[1.885s] writing dependency_links to solution_interfaces.egg-info/dependency_links.txt
+[1.885s] writing top-level names to solution_interfaces.egg-info/top_level.txt
+[1.887s] [35m[1mConsolidate compiler generated dependencies of target solution_interfaces__rosidl_generator_c[0m
+[1.887s] reading manifest file 'solution_interfaces.egg-info/SOURCES.txt'
+[1.888s] writing manifest file 'solution_interfaces.egg-info/SOURCES.txt'
+[1.899s] [ 10%] [32mBuilding C object CMakeFiles/solution_interfaces__rosidl_generator_c.dir/rosidl_generator_c/solution_interfaces/msg/detail/world_item__functions.c.o[0m
+[1.900s] [ 10%] [32mBuilding C object CMakeFiles/solution_interfaces__rosidl_generator_c.dir/rosidl_generator_c/solution_interfaces/srv/detail/get_clusters__functions.c.o[0m
+[1.918s] [ 10%] Built target solution_interfaces__cpp
+[1.919s] [ 10%] Built target ament_cmake_python_build_solution_interfaces_egg
+[1.928s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.928s] [ 15%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.929s] [ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.011s] [ 20%] [32m[1mLinking C shared library libsolution_interfaces__rosidl_generator_c.so[0m
+[2.141s] [ 20%] Built target solution_interfaces__rosidl_generator_c
+[2.152s] [ 28%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.152s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.152s] [ 28%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.198s] [35m[1mConsolidate compiler generated dependencies of target solution_interfaces__rosidl_typesupport_cpp[0m
+[2.213s] [ 30%] [32mBuilding CXX object CMakeFiles/solution_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/solution_interfaces/msg/world_item__type_support.cpp.o[0m
+[2.216s] [ 33%] [32mBuilding CXX object CMakeFiles/solution_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/solution_interfaces/srv/get_clusters__type_support.cpp.o[0m
+[2.284s] [35m[1mConsolidate compiler generated dependencies of target solution_interfaces__rosidl_typesupport_introspection_cpp[0m
+[2.300s] [ 35%] [32mBuilding CXX object CMakeFiles/solution_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/solution_interfaces/msg/detail/world_item__type_support.cpp.o[0m
+[2.303s] [ 38%] [32mBuilding CXX object CMakeFiles/solution_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/solution_interfaces/srv/detail/get_clusters__type_support.cpp.o[0m
+[2.305s] [35m[1mConsolidate compiler generated dependencies of target solution_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[2.324s] [ 41%] [32mBuilding CXX object CMakeFiles/solution_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/solution_interfaces/msg/detail/dds_fastrtps/world_item__type_support.cpp.o[0m
+[2.324s] [ 43%] [32mBuilding CXX object CMakeFiles/solution_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/solution_interfaces/srv/detail/dds_fastrtps/get_clusters__type_support.cpp.o[0m
+[2.530s] [35m[1mConsolidate compiler generated dependencies of target solution_interfaces__rosidl_typesupport_c[0m
+[2.545s] [ 46%] [32mBuilding CXX object CMakeFiles/solution_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/solution_interfaces/srv/get_clusters__type_support.cpp.o[0m
+[2.546s] [ 48%] [32mBuilding CXX object CMakeFiles/solution_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/solution_interfaces/msg/world_item__type_support.cpp.o[0m
+[2.602s] [ 51%] [32m[1mLinking CXX shared library libsolution_interfaces__rosidl_typesupport_c.so[0m
+[2.603s] [35m[1mConsolidate compiler generated dependencies of target solution_interfaces__rosidl_typesupport_introspection_c[0m
+[2.621s] [ 56%] [32mBuilding C object CMakeFiles/solution_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/solution_interfaces/srv/detail/get_clusters__type_support.c.o[0m
+[2.621s] [ 56%] [32mBuilding C object CMakeFiles/solution_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/solution_interfaces/msg/detail/world_item__type_support.c.o[0m
+[2.630s] [35m[1mConsolidate compiler generated dependencies of target solution_interfaces__rosidl_typesupport_fastrtps_c[0m
+[2.653s] [ 58%] [32mBuilding CXX object CMakeFiles/solution_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/solution_interfaces/msg/detail/world_item__type_support_c.cpp.o[0m
+[2.655s] [ 61%] [32mBuilding CXX object CMakeFiles/solution_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/solution_interfaces/srv/detail/get_clusters__type_support_c.cpp.o[0m
+[2.665s] [ 64%] [32m[1mLinking CXX shared library libsolution_interfaces__rosidl_typesupport_cpp.so[0m
+[2.691s] [ 66%] [32m[1mLinking C shared library libsolution_interfaces__rosidl_typesupport_introspection_c.so[0m
+[2.773s] [ 66%] Built target solution_interfaces__rosidl_typesupport_c
+[2.822s] [ 66%] Built target solution_interfaces__rosidl_typesupport_cpp
+[2.837s] [ 66%] Built target solution_interfaces__rosidl_typesupport_introspection_c
+[2.959s] [ 69%] [32m[1mLinking CXX shared library libsolution_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[3.022s] [ 71%] [32m[1mLinking CXX shared library libsolution_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.098s] [ 74%] [32m[1mLinking CXX shared library libsolution_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[3.119s] [ 74%] Built target solution_interfaces__rosidl_typesupport_introspection_cpp
+[3.192s] [ 74%] Built target solution_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.240s] [ 74%] Built target solution_interfaces__rosidl_typesupport_fastrtps_c
+[3.259s] [ 74%] Built target solution_interfaces
+[3.277s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.669s] [ 76%] Built target solution_interfaces__py
+[3.679s] [35m[1mConsolidate compiler generated dependencies of target solution_interfaces__rosidl_generator_py[0m
+[3.692s] [ 82%] [32mBuilding C object CMakeFiles/solution_interfaces__rosidl_generator_py.dir/rosidl_generator_py/solution_interfaces/srv/_get_clusters_s.c.o[0m
+[3.693s] [ 82%] [32mBuilding C object CMakeFiles/solution_interfaces__rosidl_generator_py.dir/rosidl_generator_py/solution_interfaces/msg/_world_item_s.c.o[0m
+[3.797s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/solution_interfaces/libsolution_interfaces__rosidl_generator_py.so[0m
+[3.890s] [ 84%] Built target solution_interfaces__rosidl_generator_py
+[3.900s] [35m[1mConsolidate compiler generated dependencies of target solution_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.900s] [35m[1mConsolidate compiler generated dependencies of target solution_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[3.900s] [35m[1mConsolidate compiler generated dependencies of target solution_interfaces__rosidl_typesupport_c__pyext[0m
+[3.912s] [ 92%] [32mBuilding C object CMakeFiles/solution_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/solution_interfaces/_solution_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.912s] [ 92%] [32mBuilding C object CMakeFiles/solution_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/solution_interfaces/_solution_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.912s] [ 92%] [32mBuilding C object CMakeFiles/solution_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/solution_interfaces/_solution_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[4.004s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/solution_interfaces/solution_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.018s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/solution_interfaces/solution_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.020s] [100%] [32m[1mLinking C shared library rosidl_generator_py/solution_interfaces/solution_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.100s] [100%] Built target solution_interfaces__rosidl_typesupport_c__pyext
+[4.100s] [100%] Built target solution_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[4.118s] [100%] Built target solution_interfaces__rosidl_typesupport_introspection_c__pyext
+[4.129s] Invoked command in '/home/dragos/AURO/assessment/build/solution_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragos/AURO/assessment/install/tf_transformations:/home/dragos/AURO/assessment/install/tf_relay:/home/dragos/AURO/assessment/install/solution:/home/dragos/AURO/assessment/install/assessment:/home/dragos/turtlebot3_ws/install/turtlebot3_teleop:/home/dragos/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/dragos/AURO/assessment/build/solution_interfaces -- -j12 -l12
+[4.224s] Invoking command in '/home/dragos/AURO/assessment/build/solution_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragos/AURO/assessment/install/tf_transformations:/home/dragos/AURO/assessment/install/tf_relay:/home/dragos/AURO/assessment/install/solution:/home/dragos/AURO/assessment/install/assessment:/home/dragos/turtlebot3_ws/install/turtlebot3_teleop:/home/dragos/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/dragos/AURO/assessment/build/solution_interfaces
+[4.231s] -- Install configuration: ""
+[4.231s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/share/ament_index/resource_index/rosidl_interfaces/solution_interfaces
+[4.232s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces
+[4.232s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv
+[4.232s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/get_clusters.h
+[4.232s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail
+[4.232s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__functions.h
+[4.233s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__functions.c
+[4.233s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__type_support.h
+[4.233s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__struct.h
+[4.233s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg
+[4.233s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/rosidl_generator_c__visibility_control.h
+[4.233s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/world_items.h
+[4.234s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail
+[4.234s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__type_support.h
+[4.234s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__functions.h
+[4.234s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__type_support.h
+[4.234s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__functions.c
+[4.234s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__struct.h
+[4.235s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__functions.c
+[4.235s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__type_support.h
+[4.235s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__functions.h
+[4.235s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__struct.h
+[4.235s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__functions.c
+[4.235s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__functions.h
+[4.235s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__struct.h
+[4.235s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__type_support.h
+[4.235s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__functions.h
+[4.236s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__struct.h
+[4.236s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__functions.c
+[4.236s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/world_item.h
+[4.236s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/clusters.h
+[4.236s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/cluster.h
+[4.237s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/environment/library_path.sh
+[4.237s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/environment/library_path.dsv
+[4.237s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_generator_c.so
+[4.237s] -- Set runtime path of "/home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_generator_c.so" to ""
+[4.237s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces
+[4.237s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv
+[4.238s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail
+[4.238s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__rosidl_typesupport_fastrtps_c.h
+[4.238s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg
+[4.238s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail
+[4.238s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__rosidl_typesupport_fastrtps_c.h
+[4.239s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__rosidl_typesupport_fastrtps_c.h
+[4.239s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__rosidl_typesupport_fastrtps_c.h
+[4.239s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__rosidl_typesupport_fastrtps_c.h
+[4.239s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.239s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_typesupport_fastrtps_c.so
+[4.239s] -- Set runtime path of "/home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[4.240s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces
+[4.240s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv
+[4.240s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail
+[4.240s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__rosidl_typesupport_introspection_c.h
+[4.240s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__type_support.c
+[4.240s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg
+[4.240s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail
+[4.241s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__type_support.c
+[4.241s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__type_support.c
+[4.241s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__rosidl_typesupport_introspection_c.h
+[4.241s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__rosidl_typesupport_introspection_c.h
+[4.242s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__type_support.c
+[4.242s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__rosidl_typesupport_introspection_c.h
+[4.242s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__rosidl_typesupport_introspection_c.h
+[4.242s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__type_support.c
+[4.242s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.242s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_typesupport_introspection_c.so
+[4.242s] -- Set runtime path of "/home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[4.242s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_typesupport_c.so
+[4.243s] -- Set runtime path of "/home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_typesupport_c.so" to ""
+[4.243s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces
+[4.243s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv
+[4.243s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/get_clusters.hpp
+[4.243s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail
+[4.243s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__builder.hpp
+[4.244s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__traits.hpp
+[4.244s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__struct.hpp
+[4.244s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg
+[4.244s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/cluster.hpp
+[4.244s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/world_items.hpp
+[4.244s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail
+[4.244s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__traits.hpp
+[4.245s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__builder.hpp
+[4.245s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__traits.hpp
+[4.245s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__builder.hpp
+[4.245s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__traits.hpp
+[4.245s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__builder.hpp
+[4.245s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__struct.hpp
+[4.246s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__struct.hpp
+[4.246s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__builder.hpp
+[4.246s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__struct.hpp
+[4.246s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__struct.hpp
+[4.246s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__traits.hpp
+[4.246s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/clusters.hpp
+[4.247s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/world_item.hpp
+[4.247s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces
+[4.247s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv
+[4.247s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail
+[4.247s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/dds_fastrtps
+[4.247s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__rosidl_typesupport_fastrtps_cpp.hpp
+[4.248s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg
+[4.248s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail
+[4.248s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__rosidl_typesupport_fastrtps_cpp.hpp
+[4.248s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/dds_fastrtps
+[4.248s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__rosidl_typesupport_fastrtps_cpp.hpp
+[4.249s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__rosidl_typesupport_fastrtps_cpp.hpp
+[4.249s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__rosidl_typesupport_fastrtps_cpp.hpp
+[4.249s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.249s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[4.249s] -- Set runtime path of "/home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.250s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces
+[4.250s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv
+[4.250s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail
+[4.250s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__type_support.cpp
+[4.250s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/srv/detail/get_clusters__rosidl_typesupport_introspection_cpp.hpp
+[4.250s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg
+[4.251s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail
+[4.251s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__rosidl_typesupport_introspection_cpp.hpp
+[4.251s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__rosidl_typesupport_introspection_cpp.hpp
+[4.251s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_item__type_support.cpp
+[4.251s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__rosidl_typesupport_introspection_cpp.hpp
+[4.252s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/world_items__type_support.cpp
+[4.252s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__rosidl_typesupport_introspection_cpp.hpp
+[4.252s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/clusters__type_support.cpp
+[4.252s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/include/solution_interfaces/solution_interfaces/msg/detail/cluster__type_support.cpp
+[4.252s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_typesupport_introspection_cpp.so
+[4.252s] -- Set runtime path of "/home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[4.252s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_typesupport_cpp.so
+[4.252s] -- Set runtime path of "/home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_typesupport_cpp.so" to ""
+[4.252s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/environment/pythonpath.sh
+[4.252s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/environment/pythonpath.dsv
+[4.252s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces-0.0.0-py3.10.egg-info
+[4.252s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[4.252s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.252s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[4.252s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.252s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces
+[4.253s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/solution_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.253s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/libsolution_interfaces__rosidl_generator_py.so
+[4.253s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/srv
+[4.253s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/srv/_get_clusters.py
+[4.253s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/srv/__init__.py
+[4.253s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/srv/_get_clusters_s.c
+[4.253s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/solution_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.253s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg
+[4.253s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg/_world_item_s.c
+[4.253s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg/_world_item.py
+[4.253s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg/_clusters.py
+[4.253s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg/_cluster_s.c
+[4.253s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg/__init__.py
+[4.253s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg/_clusters_s.c
+[4.253s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg/_world_items.py
+[4.253s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg/_cluster.py
+[4.253s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg/_world_items_s.c
+[4.254s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/_solution_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.254s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/__init__.py
+[4.254s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/_solution_interfaces_s.ep.rosidl_typesupport_c.c
+[4.254s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/_solution_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[4.254s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/solution_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.301s] Listing '/home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces'...
+[4.301s] Compiling '/home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/__init__.py'...
+[4.301s] Listing '/home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg'...
+[4.301s] Compiling '/home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg/__init__.py'...
+[4.301s] Compiling '/home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/msg/_world_item.py'...
+[4.301s] Listing '/home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/srv'...
+[4.301s] Compiling '/home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/srv/__init__.py'...
+[4.301s] Compiling '/home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/srv/_get_clusters.py'...
+[4.306s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/solution_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.306s] -- Set runtime path of "/home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/solution_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.306s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/solution_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.307s] -- Set runtime path of "/home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/solution_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.307s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/solution_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.307s] -- Set runtime path of "/home/dragos/AURO/assessment/install/solution_interfaces/local/lib/python3.10/dist-packages/solution_interfaces/solution_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.308s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_generator_py.so
+[4.308s] -- Set runtime path of "/home/dragos/AURO/assessment/install/solution_interfaces/lib/libsolution_interfaces__rosidl_generator_py.so" to ""
+[4.308s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/msg/WorldItem.idl
+[4.309s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/srv/GetClusters.idl
+[4.309s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/msg/WorldItem.msg
+[4.309s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/srv/GetClusters.srv
+[4.309s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/srv/GetClusters_Request.msg
+[4.309s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/srv/GetClusters_Response.msg
+[4.309s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/ament_index/resource_index/package_run_dependencies/solution_interfaces
+[4.310s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/ament_index/resource_index/parent_prefix_path/solution_interfaces
+[4.310s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/environment/ament_prefix_path.sh
+[4.310s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/environment/ament_prefix_path.dsv
+[4.310s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/environment/path.sh
+[4.310s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/environment/path.dsv
+[4.310s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/local_setup.bash
+[4.311s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/local_setup.sh
+[4.311s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/local_setup.zsh
+[4.311s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/local_setup.dsv
+[4.311s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/package.dsv
+[4.311s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/ament_index/resource_index/packages/solution_interfaces
+[4.311s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/export_solution_interfaces__rosidl_generator_cExport.cmake
+[4.312s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/export_solution_interfaces__rosidl_generator_cExport-noconfig.cmake
+[4.312s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/export_solution_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[4.312s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/export_solution_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.312s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/solution_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[4.312s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/solution_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.313s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/solution_interfaces__rosidl_typesupport_cExport.cmake
+[4.313s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/solution_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[4.313s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/export_solution_interfaces__rosidl_generator_cppExport.cmake
+[4.313s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/export_solution_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.313s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/export_solution_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/solution_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/solution_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/solution_interfaces__rosidl_typesupport_cppExport.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/solution_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/export_solution_interfaces__rosidl_generator_pyExport.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/export_solution_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[4.314s] -- Installing: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/rosidl_cmake-extras.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/solution_interfacesConfig.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/cmake/solution_interfacesConfig-version.cmake
+[4.314s] -- Up-to-date: /home/dragos/AURO/assessment/install/solution_interfaces/share/solution_interfaces/package.xml
+[4.316s] Invoked command in '/home/dragos/AURO/assessment/build/solution_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dragos/AURO/assessment/install/tf_transformations:/home/dragos/AURO/assessment/install/tf_relay:/home/dragos/AURO/assessment/install/solution:/home/dragos/AURO/assessment/install/assessment:/home/dragos/turtlebot3_ws/install/turtlebot3_teleop:/home/dragos/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/dragos/AURO/assessment/build/solution_interfaces

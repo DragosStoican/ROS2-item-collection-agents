@@ -1,0 +1,29 @@
+[0.864s] Invoking command in '/home/dragos/AURO/assessment/src/solution': PYTHONPATH=/home/dragos/AURO/assessment/build/solution/prefix_override:/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/solution build --build-base /home/dragos/AURO/assessment/build/solution/build install --record /home/dragos/AURO/assessment/build/solution/install.log --single-version-externally-managed
+[1.095s] running egg_info
+[1.095s] writing ../../build/solution/solution.egg-info/PKG-INFO
+[1.095s] writing dependency_links to ../../build/solution/solution.egg-info/dependency_links.txt
+[1.096s] writing entry points to ../../build/solution/solution.egg-info/entry_points.txt
+[1.096s] writing requirements to ../../build/solution/solution.egg-info/requires.txt
+[1.096s] writing top-level names to ../../build/solution/solution.egg-info/top_level.txt
+[1.097s] reading manifest file '../../build/solution/solution.egg-info/SOURCES.txt'
+[1.099s] writing manifest file '../../build/solution/solution.egg-info/SOURCES.txt'
+[1.099s] running build
+[1.099s] running build_py
+[1.100s] copying solution/robot_controller.py -> /home/dragos/AURO/assessment/build/solution/build/lib/solution
+[1.101s] copying solution/world_item_manager.py -> /home/dragos/AURO/assessment/build/solution/build/lib/solution
+[1.102s] running install
+[1.102s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.102s]   warnings.warn(
+[1.102s] running install_lib
+[1.103s] copying /home/dragos/AURO/assessment/build/solution/build/lib/solution/robot_controller.py -> /home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution
+[1.104s] copying /home/dragos/AURO/assessment/build/solution/build/lib/solution/world_item_manager.py -> /home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution
+[1.104s] byte-compiling /home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/robot_controller.py to robot_controller.cpython-310.pyc
+[1.104s] byte-compiling /home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/world_item_manager.py to world_item_manager.cpython-310.pyc
+[1.104s] running install_data
+[1.104s] running install_egg_info
+[1.106s] removing '/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info' (and everything under it)
+[1.106s] Copying ../../build/solution/solution.egg-info to /home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages/solution-0.0.0-py3.10.egg-info
+[1.106s] running install_scripts
+[1.125s] Installing robot_controller script to /home/dragos/AURO/assessment/install/solution/lib/solution
+[1.126s] writing list of installed files to '/home/dragos/AURO/assessment/build/solution/install.log'
+[1.149s] Invoked command in '/home/dragos/AURO/assessment/src/solution' returned '0': PYTHONPATH=/home/dragos/AURO/assessment/build/solution/prefix_override:/home/dragos/AURO/assessment/install/solution/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/solution build --build-base /home/dragos/AURO/assessment/build/solution/build install --record /home/dragos/AURO/assessment/build/solution/install.log --single-version-externally-managed

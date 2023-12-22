@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from solution_interfaces/msg/Clusters.msg
+// generated code does not contain a copyright notice
+
+#include "solution_interfaces/msg/Cluster.idl"
+
+module solution_interfaces {
+  module msg {
+    struct Clusters {
+      sequence<solution_interfaces::msg::Cluster> red;
+
+      sequence<solution_interfaces::msg::Cluster> green;
+
+      sequence<solution_interfaces::msg::Cluster> blue;
+    };
+  };
+};
