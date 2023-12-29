@@ -69,6 +69,18 @@ def generate_launch_description():
         output='screen',
     )
 
+    start_robot_manager = Node(
+        package='solution',
+        executable='robot_manager',
+        output='screen',
+    )
+
+    start_world_item_manager = Node(
+        package='solution',
+        executable='world_item_manager',
+        output='screen',
+    )
+
     ld = LaunchDescription()
 
     ld.add_action(SetParameter(name='use_sim_time', value=True))
@@ -76,6 +88,10 @@ def generate_launch_description():
     ld.add_action(assessment_cmd)
 
     ld.add_action(start_cluster_manager)
+
+    ld.add_action(start_world_item_manager)
+
+    ld.add_action(start_robot_manager)
 
     ld.add_action(TimerAction(period=8.0, actions=robot_controller_cmd))
 

@@ -14,7 +14,7 @@ from rclpy.node import Node
 from rclpy.signals import SignalHandlerOptions
 from rclpy.executors import ExternalShutdownException, MultiThreadedExecutor
 from rclpy.qos import QoSProfile, QoSDurabilityPolicy
-from rclpy.callback_groups import MutuallyExclusiveCallbackGroup, ReentrantCallbackGroup
+from rclpy.callback_groups import MutuallyExclusiveCallbackGroup
 from tf_transformations import euler_from_quaternion
 from geometry_msgs.msg import Twist, PoseStamped
 from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
@@ -27,6 +27,7 @@ from assessment_interfaces.msg import ItemList, ItemHolders, RobotList
 
 # Solution Dependencies
 from solution_interfaces.msg import WorldItem, Clusters
+from solution_interfaces.srv import InitialPose
 
 
 class State(Enum):
@@ -83,11 +84,11 @@ class RobotController(Node):
         self.map_req = GetMap.Request()
         self.log("Connected to map service")
 
-        # self.cluster_cli = self.create_client(GetClusters, '/clusters', callback_group=client_cb_group)
-        # while not self.cluster_cli.wait_for_service(timeout_sec=1.0):
-        #     self.get_logger().info('Cluster service not available, waiting again...')
-        # self.clusters_req = GetClusters.Request()
-        # self.log("Connected to clusters service")
+        self.initial_pose_cli = self.create_client(InitialPose, '/initial_pose', callback_group=client_cb_group)
+        while not self.initial_pose_cli.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('Initial Pose service not available, waiting again...')
+        self.initial_pose_req = InitialPose.Request()
+        self.log("Connected to Initial Pose service")
 
         # Get the costmap object
         response = self.send_request(self.map_cli, self.map_req)
@@ -97,18 +98,14 @@ class RobotController(Node):
         self.log("Obtained map object")
 
         # Set initial pose
-        yaml_path = os.path.join(get_package_share_directory('assessment'), 'config', 'initial_poses.yaml')
-
-        with open(yaml_path, 'r') as f:
-            configuration = yaml.safe_load(f)
-        initial_poses = configuration[3]
-
+        self.initial_pose_req.robot_id = self.get_namespace()[1:]
+        response = self.send_request(self.initial_pose_cli, self.initial_pose_req)
 
         self.initial_pose = PoseStamped()
         self.initial_pose.header.frame_id = 'map'
         self.initial_pose.header.stamp = self.get_clock().now().to_msg()
-        self.initial_pose.pose.position.x = initial_poses[self.get_namespace()[1:]]['x']
-        self.initial_pose.pose.position.y = initial_poses[self.get_namespace()[1:]]['y']
+        self.initial_pose.pose.position.x = response.x
+        self.initial_pose.pose.position.y = response.y
         self.initial_pose.pose.orientation.z = 0.0
         self.initial_pose.pose.orientation.w = 1.0
         self.navigator.setInitialPose(self.initial_pose)
@@ -187,10 +184,7 @@ class RobotController(Node):
 
     def send_request(self, client, request):
         future = client.call_async(request)
-        if self.executor is None:
-            rclpy.spin_until_future_complete(self, future)
-        else:
-            self.executor.spin_until_future_complete(future)
+        rclpy.spin_until_future_complete(self, future)
         return future.result()
     
 

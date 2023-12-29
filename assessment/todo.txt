@@ -1,3 +1,3 @@
 docstrings
-avoid robots
 service for getting configs and initial poses and whatever
+move evaluate to a separate service

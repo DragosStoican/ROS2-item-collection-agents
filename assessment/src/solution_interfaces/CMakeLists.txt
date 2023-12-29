@@ -16,6 +16,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/WorldItem.msg"
   "msg/Clusters.msg"
+  "srv/InitialPose.srv"
 )
 
 if(BUILD_TESTING)
