@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   simulator:
-    image: ros2
+    image: dragosstoican/ros2:0.0.0
     container_name: ros2-assessment
     privileged: true
     deploy:
