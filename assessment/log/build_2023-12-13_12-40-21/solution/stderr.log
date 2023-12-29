@@ -1,7 +1,0 @@
-/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
-  warnings.warn(
-  File "/home/userfs/d/ds1473/AURO/assessment/install/solution/lib/python3.10/site-packages/solution/robot_controller.py", line 44
-    self.occupancy_grid = response.mapndarray to array.array
-                                              ^^
-SyntaxError: invalid syntax
-

@@ -19,9 +19,11 @@ from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 from nav2_simple_commander.costmap_2d import PyCostmap2D
 from nav_msgs.msg import OccupancyGrid, Odometry
 from nav_msgs.srv import GetMap
+from visualization_msgs.msg import Marker, MarkerArray
+from rclpy.duration import Duration
 
 # Assessment dependencies
-from assessment_interfaces.msg import ItemList
+from assessment_interfaces.msg import ItemList, ItemHolders
 
 # Solution Dependencies
 from solution_interfaces.msg import WorldItem
@@ -33,12 +35,13 @@ class State(Enum):
     NAVIGATE = 1 # Navigate to a point where there are items to collect
     PICKUP = 2 # Drive into an object in sight
     RETURN = 3 # Return home to drop off item
-    EVALUATE = 4 # Reevaluate weather there is a better cluster to collect from
+    SET_GOAL = 4 # Reevaluate weather there is a better cluster to collect from
 
 CAMERA_FOCAL_DISTANCE = 540
 BALL_DIAMETER = 0.15
 MIN_ITEM_DIAMETER = 20
 MAX_ITEM_DIAMETER = 450
+CLOSE_ITEM_THRESHOLD = 100
 # MIN_DISTANCE = 0.26
 # MAX_DISTANCE = 4.18
 MAX_ANGLE_READING = 170
@@ -56,18 +59,20 @@ class RobotController(Node):
         self.yaw = 0.0
         self.navigator = BasicNavigator()
         self.items = []
-        self.world_items = {
+        self.item_holders = []
+        self.map_items = {
             'RED': [],
             'GREEN': [],
             'BLUE': [],
         }
+        self.goal = None
         self.map = None
         self.test = True
         self.colour = None
         client_cb_group = MutuallyExclusiveCallbackGroup()
         timer_cb_group = MutuallyExclusiveCallbackGroup()
         subscription_cb_roup = MutuallyExclusiveCallbackGroup()
-        Publisher_cb_group = MutuallyExclusiveCallbackGroup()
+        publisher_cb_group = MutuallyExclusiveCallbackGroup()
         
         # Service clients
         self.map_cli = self.create_client(GetMap, 'map_server/map', callback_group=client_cb_group)
@@ -97,7 +102,9 @@ class RobotController(Node):
         initial_pose.pose.position.y = 0.0
         initial_pose.pose.orientation.z = 0.0
         initial_pose.pose.orientation.w = 1.0
-        self.navigator.setInitialPose(initial_pose)   
+        self.navigator.setInitialPose(initial_pose)
+
+        self.navigator.waitUntilNav2Active()
 
 
         ### SUBSRCIBERS ###
@@ -121,14 +128,28 @@ class RobotController(Node):
             self.world_items_callback,
             10,
             callback_group=subscription_cb_roup)
+        
+        self.clusters_markers_subscriber = self.create_subscription(
+            MarkerArray,
+            "/clusters_markers",
+            self.clusters_markers_callback,
+            10,
+            callback_group=subscription_cb_roup)
+        
+        self.item_holders_subsrcriber = self.create_subscription(
+            ItemHolders,
+            "/item_holders",
+            self.item_holders_callback,
+            10,
+            callback_group=subscription_cb_roup)
 
 
         ### PUBLISHERS ###
-        self.cmd_vel_publisher = self.create_publisher(Twist, 'cmd_vel', 10, callback_group=Publisher_cb_group)
+        self.cmd_vel_publisher = self.create_publisher(Twist, 'cmd_vel', 10, callback_group=publisher_cb_group)
         qos = QoSProfile(durability = QoSDurabilityPolicy.TRANSIENT_LOCAL,
                          depth = 10)
-        self.occupancy_grid_punlisher = self.create_publisher(OccupancyGrid, 'map', qos, callback_group=Publisher_cb_group)
-        self.world_item_publisher = self.create_publisher(WorldItem, '/world_items', 10, callback_group=Publisher_cb_group)
+        self.occupancy_grid_punlisher = self.create_publisher(OccupancyGrid, 'map', qos, callback_group=publisher_cb_group)
+        self.world_item_publisher = self.create_publisher(WorldItem, '/world_items', 10, callback_group=publisher_cb_group)
 
 
         self.timer_period = 0.1 # 100 milliseconds = 10 Hz
@@ -148,26 +169,55 @@ class RobotController(Node):
 
     def send_request(self, client, request):
         future = client.call_async(request)
-        rclpy.spin_until_future_complete(self, future)
+        if self.executor is None:
+            rclpy.spin_until_future_complete(self, future)
+        else:
+            self.executor.spin_until_future_complete(future)
         return future.result()
     
 
     def item_callback(self, msg):
         self.items = msg.data
-        self.log("Item callback")
 
-    
+
+    def clusters_markers_callback(self, msg):
+        markers = msg.markers
+        # TODO: Iterate through clusters
+        cluster = markers[0]
+        goal_pose = PoseStamped()
+        goal_pose.header.frame_id = 'map'
+        goal_pose.header.stamp = self.get_clock().now().to_msg()
+        goal_pose.pose.position.x = cluster.pose.position.x
+        goal_pose.pose.position.y = cluster.pose.position.y
+        goal_pose.pose.orientation.w = 1.0
+
+        # self.log(f"Setting new goal!")
+        self.goal = goal_pose
+
+
+    def item_holders_callback(self, msg):
+        self.item_holders = msg.data
+
+
     def world_items_callback(self, msg):
-        self.world_items[msg.colour].append((msg.x, msg.y))
-        if self.colour is None or self.colour == msg.colour:
-            self.add_item_to_costmap(msg.x, msg.y)
+        # TODO: Maybe map update should only happen when at home
+        x_map, y_map = self.map.worldToMap(msg.x, msg.y)
+        if not self.item_on_map(msg.colour, x_map, y_map):
+            self.map_items[msg.colour].append((x_map, y_map))
+            self.add_item_to_costmap(x_map, y_map)
 
-    
+
+    def item_on_map(self, colour, x, y) -> bool:
+        x_map, y_map = self.map.worldToMap(x, y)
+        for item in self.map_items[colour]:
+            if item[0] == x and item[1] == y:
+                return True
+        return False
+
     def add_item_to_costmap(self, x, y):
         """
-        Adds item at real location x and y to the costmap of the robot
+        Adds item at map location x and y to the costmap of the robot
         """
-        x, y = self.map.worldToMap(x, y)
         self.map.setCost(x, y, 100)
         self.updateMap()
 
@@ -182,7 +232,7 @@ class RobotController(Node):
 
     
     def log(self, text: str):
-        self.get_logger().info(text)
+        self.get_logger().info(f"[{self.get_namespace()}]: {text}")
 
 
     def get_distance_to_item(self, diameter):
@@ -191,7 +241,6 @@ class RobotController(Node):
 
 
     def publish_items(self):
-        self.log(f"publishing item {self.items}")
         for i, item in enumerate(self.items):
             if math.fabs(item.x) < MAX_ANGLE_READING and item.diameter >= MIN_ITEM_DIAMETER:
                 distance = self.get_distance_to_item(item.diameter)
@@ -202,25 +251,84 @@ class RobotController(Node):
                 world_item.x = self.pose.position.x + dx
                 world_item.y = self.pose.position.y + dy
                 world_item.colour = item.colour
-                self.log("publishing item")
-                self.world_item_publisher.publish(world_item)
+                x_map, y_map = self.map.worldToMap(world_item.x, world_item.y)
+                if not self.item_on_map(world_item.colour, x_map, y_map):
+                    self.world_item_publisher.publish(world_item)
+
+
+    def has_item(self):
+        if self.item_holders != []:
+            self.log(f"{self.item_holders}")
+        for robot in self.item_holders:
+            if "/" + robot.robot_id == self.get_namespace() and robot.holding_item:
+                self.log(f"holding an item!")
+                return True
+        return False
+
+
+    def get_closest_item(self):
+        result = None
+        for item in self.items:
+            if item.diameter >= CLOSE_ITEM_THRESHOLD and (result is None or item.diameter > result.diameter):
+                result = item
+        return result
 
 
     def control_loop(self):
-        # # colour = self.get_parameter('colour').get_parameter_value().string_value
+        self.publish_items()
+        if self.has_item():
+            self.log("Going into RETURN state")
+            self.state = State.RETURN
+        
         match self.state:
             case State.SEARCH:
-                self.log("HELLOO")
-                self.publish_items()
-                if self.test:
-                    self.log("Sending clusters request")
-                    clusters = self.send_request(self.cluster_cli, self.clusters_req).clusters
-                    self.log(f"Done with the request: {clusters}")
-                    if len(clusters) == 6:
-                        self.log("6 Clusters!!")
-                        self.test = False
-                    self.log(f"Done loop")
-                    self.test = False
+                # TODO: Logic for scout/pickupers
+                self.state = State.SET_GOAL
+                # goal_pose = PoseStamped()
+                # goal_pose.header.frame_id = 'map'
+                # goal_pose.header.stamp = self.get_clock().now().to_msg()
+                # goal_pose.pose.position.x = -1.35
+                # goal_pose.pose.position.y = -0.14
+                # goal_pose.pose.orientation.w = 1.0
+
+                # self.goal = goal_pose
+                # self.navigator.goToPose(self.goal)
+                # self.state = State.NAVIGATE
+            case State.SET_GOAL:
+                if self.goal != None:
+                    self.log(f"Setting new goal!")
+                    self.navigator.goToPose(self.goal)
+                    self.state = State.NAVIGATE
+            case State.NAVIGATE:
+                if self.get_closest_item() is not None:
+                        self.log("Going into PICKUP state")
+                        self.navigator.cancelTask()
+                        self.state = State.PICKUP
+                        
+            case State.PICKUP:
+                msg = Twist()
+                closest_item = self.get_closest_item()
+                if closest_item is None:
+                    msg.linear.x = 1.0
+                elif math.fabs(closest_item.x) > 10:
+                    msg.angular.z = closest_item.x / 320.0
+                else:
+                    msg.linear.x = 2.0
+                self.cmd_vel_publisher.publish(msg)
+                
+
+            case State.RETURN:
+                pass
+
+        # match self.state:
+        #     case State.SEARCH:                
+        #         if self.test:
+        #             # self.log("Sending clusters request")
+        #             # clusters = self.send_request(self.cluster_cli, self.clusters_req).clusters
+        #             # self.log(f"Done with the request: {clusters}")
+        #             # if len(clusters) == 6:
+        #             #     self.log("6 Clusters!!")
+        #             self.test = False
 
                         
 
@@ -247,16 +355,6 @@ def main(args=None):
         executor.shutdown()
         node.destroy_node()
         rclpy.try_shutdown()
-
-    # try:
-    #     rclpy.spin(node)
-    # except KeyboardInterrupt:
-    #     pass
-    # except ExternalShutdownException:
-    #     sys.exit(1)
-    # finally:
-    #     node.destroy_node()
-    #     rclpy.try_shutdown()
 
 
 if __name__ == '__main__':

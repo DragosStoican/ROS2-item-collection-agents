@@ -1,4 +1,0 @@
-[console_scripts]
-cluster_manager = solution.cluster_manager:main
-robot_controller = solution.robot_controller:main
-

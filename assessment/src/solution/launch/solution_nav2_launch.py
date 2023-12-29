@@ -3,7 +3,7 @@ from ament_index_python.packages import get_package_share_directory
 import yaml
 
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
@@ -77,7 +77,6 @@ def generate_launch_description():
 
     ld.add_action(start_cluster_manager)
 
-    for cmd in robot_controller_cmd:
-        ld.add_action(cmd)
+    ld.add_action(TimerAction(period=8.0, actions=robot_controller_cmd))
 
     return ld

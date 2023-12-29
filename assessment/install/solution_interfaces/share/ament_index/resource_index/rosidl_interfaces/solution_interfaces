@@ -1,6 +1,0 @@
-msg/WorldItem.idl
-msg/WorldItem.msg
-srv/GetClusters.idl
-srv/GetClusters.srv
-srv/GetClusters_Request.msg
-srv/GetClusters_Response.msg

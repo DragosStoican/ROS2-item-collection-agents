@@ -1,7 +1,0 @@
-{
-  "package_name": "solution_interfaces",
-  "non_idl_tuples": [
-    "/home/dragos/AURO/assessment/src/solution_interfaces:msg/WorldItem.msg",
-    "/home/dragos/AURO/assessment/src/solution_interfaces:srv/GetClusters.srv"
-  ]
-}
