@@ -11,14 +11,12 @@ from rclpy.signals import SignalHandlerOptions
 from visualization_msgs.msg import Marker, MarkerArray
 
 # Solution Dependencies
-from solution_interfaces.msg import WorldItem
-from solution_interfaces.srv import GetClusters
+from solution_interfaces.msg import WorldItem, Clusters
 
 class ClusterManager(Node):
 
     def __init__(self):
         super().__init__('cluster_manager')
-        self.marker_id = 0
         self.clusters = {
             'RED': [],
             'GREEN': [],
@@ -26,7 +24,7 @@ class ClusterManager(Node):
         }
 
         # Services
-        self.cluster_srv = self.create_service(GetClusters, '/clusters', self.get_clusters_callback)
+        # self.cluster_srv = self.create_service(GetClusters, '/clusters', self.get_clusters_callback)
 
         ## SUBSCRIBERS ##
         self.world_item_subscriber = self.create_subscription(
@@ -37,10 +35,10 @@ class ClusterManager(Node):
         
         ## PUBLISHERS ##
         self.marker_publisher = self.create_publisher(MarkerArray, '/clusters_markers', 10)
+        self.clusters_publisher = self.create_publisher(Clusters, '/clusters', 10)
 
     
-    def create_marker_array(self, id, colour, x, y):
-        marker_array = MarkerArray()
+    def mark_cluster(self, id, item : WorldItem):
         marker = Marker()
         marker.header.frame_id = "/map"
         # marker.header.stamp = self.get_clock().now()
@@ -51,32 +49,41 @@ class ClusterManager(Node):
         marker.scale.y = 0.25
         marker.scale.z = 0.25
         # Set the color
-        if colour == "GREEN":
+        if item.colour == "GREEN":
             marker.color.g = 1.0
-        if colour == "RED":
+        if item.colour == "RED":
             marker.color.r = 1.0
-        if colour == "BLUE":
+        if item.colour == "BLUE":
             marker.color.b = 1.0
         marker.color.a = 1.0
         # Set the pose of the marker
-        marker.pose.position.x = x
-        marker.pose.position.y = y
+        marker.pose.position.x = item.x
+        marker.pose.position.y = item.y
         marker.pose.position.z = 0.0
         marker.pose.orientation.x = 0.0
         marker.pose.orientation.y = 0.0
         marker.pose.orientation.z = 0.0
         marker.pose.orientation.w = 1.0
 
-        marker_array.markers.append(marker)
-        self.marker_publisher.publish(marker_array)
+        return marker        
         
 
     def create_markers_for_clusters(self):
         id = 0
+        marker_array = MarkerArray()
+        clusters = Clusters()
+
+        clusters.clusters = []
         for sublist in self.clusters.values():
-            for item in sublist:
-                self.create_marker_array(id, item.colour, item.x, item.y)
-                id += 1
+            clusters.clusters.extend(sublist)
+
+        for item in clusters.clusters:
+            self.get_logger().info(f"Marking {item}")
+            marker_array.markers.append(self.mark_cluster(id, item))
+            id += 1
+        
+        self.marker_publisher.publish(marker_array)
+        self.clusters_publisher.publish(clusters)
 
 
     def world_items_callback(self, world_item):
@@ -98,12 +105,12 @@ class ClusterManager(Node):
         return math.sqrt((c1.x - c2.x)**2 + (c1.y - c2.y)**2)
     
 
-    def get_clusters_callback(self, request, response):
-        out = []
-        for sublist in self.clusters.values():
-            out.extend(sublist)
-        response.clusters = out
-        return response
+    # def get_clusters_callback(self, request, response):
+    #     out = []
+    #     for sublist in self.clusters.values():
+    #         out.extend(sublist)
+    #     response.clusters = out
+    #     return response
 
 
 def main(args=None):

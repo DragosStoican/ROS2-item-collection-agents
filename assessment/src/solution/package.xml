@@ -3,8 +3,8 @@
 <package format="3">
   <name>solution</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="user@todo.todo">user</maintainer>
+  <description>Robot item collector</description>
+  <maintainer email="ds1473@york.ac.uk">user</maintainer>
   <license>TODO: License declaration</license>
 
   <test_depend>ament_copyright</test_depend>

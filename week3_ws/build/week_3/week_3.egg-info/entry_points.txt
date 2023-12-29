@@ -1,4 +1,0 @@
-[console_scripts]
-turtlebot3_fsm = week_3.turtlebot3_fsm:main
-turtlebot3_random = week_3.turtlebot3_random:main
-

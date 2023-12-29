@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/userfs/d/ds1473/AURO/auro_ws/build/gazebo_plugins/libgazebo_ros_diff_drive.so" "TARGETS" "gazebo_ros_diff_drive" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

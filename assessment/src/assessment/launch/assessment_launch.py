@@ -4,11 +4,11 @@ from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription, LaunchContext
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, GroupAction, LogInfo, OpaqueFunction
-from launch.conditions import IfCondition
+from launch.conditions import IfCondition, UnlessCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, TextSubstitution, PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
-from launch_ros.actions import Node, SetUseSimTime, SetRemap, PushRosNamespace
+from launch_ros.actions import Node, SetParameter, SetRemap, PushRosNamespace
 
 import xml.etree.ElementTree as ET
 import yaml
@@ -20,6 +20,7 @@ pkg_gazebo_ros = FindPackageShare('gazebo_ros')
 def gazebo_world(context : LaunchContext):
 
     obstacles = eval(context.launch_configurations['obstacles'].lower().capitalize())
+    limit_real_time_factor = eval(context.launch_configurations['limit_real_time_factor'].lower().capitalize())
 
     world_path = os.path.join(get_package_share_directory(package_name), 'worlds', 'assessment_world.world')
     tree = ET.parse(world_path)
@@ -31,6 +32,11 @@ def gazebo_world(context : LaunchContext):
                 if "box" in model.attrib['name'] or "cylinder" in model.attrib['name']:
                     world.remove(model)
 
+    if limit_real_time_factor == False:
+        for node in root.iter("real_time_update_rate"):
+            for element in node.iter():
+                element.text = "0.0"
+
     world = os.path.join(get_package_share_directory(package_name), 'worlds', 'simulation_world.world')
 
     with open(world, 'w') as f:
@@ -40,7 +46,7 @@ def gazebo_world(context : LaunchContext):
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([pkg_gazebo_ros, 'launch', 'gzserver.launch.py'])
         ),
-        launch_arguments={'world': world}.items()
+        launch_arguments={'world': world, 'force_system': 'False'}.items()
     )
 
     return [gzserver_cmd]
@@ -79,7 +85,7 @@ def group_action(context : LaunchContext):
 
         for camera in root.findall('.//camera'):
             for noise in camera.findall('.//noise'):
-                camera.remove(noise)         
+                camera.remove(noise)
 
     robot_sdf = os.path.join(get_package_share_directory(package_name), 'models', 'robot.sdf')
 
@@ -92,6 +98,11 @@ def group_action(context : LaunchContext):
         configuration = yaml.safe_load(f)
 
     initial_poses = configuration[num_robots]
+
+    with open(context.launch_configurations['rviz_windows'], 'r') as f:
+        configuration = yaml.safe_load(f)
+
+    rviz_windows = configuration[num_robots]
 
     bringup_cmd_group = []
 
@@ -108,7 +119,11 @@ def group_action(context : LaunchContext):
                 PythonLaunchDescriptionSource(
                     PathJoinSubstitution([launch_file_dir, 'rviz_launch.py'])),
                 condition=IfCondition(context.launch_configurations['use_rviz']),
-                launch_arguments={'rviz_config': context.launch_configurations['rviz_config']}.items()),
+                launch_arguments={'rviz_config': context.launch_configurations['rviz_config'],
+                                  'window_x': str(rviz_windows[robot_name]['window_x']),
+                                  'window_y': str(rviz_windows[robot_name]['window_y']),
+                                  'window_width': str(rviz_windows[robot_name]['window_width']),
+                                  'window_height': str(rviz_windows[robot_name]['window_height'])}.items()),
 
             IncludeLaunchDescription(
                 PythonLaunchDescriptionSource(PathJoinSubstitution([
@@ -147,12 +162,16 @@ def generate_launch_description():
     sensor_noise = LaunchConfiguration('sensor_noise')
     use_rviz = LaunchConfiguration('use_rviz')
     rviz_config_file = LaunchConfiguration('rviz_config')
+    rviz_windows = LaunchConfiguration('rviz_windows')
     obstacles = LaunchConfiguration('obstacles')
     item_manager = LaunchConfiguration('item_manager')
     random_seed = LaunchConfiguration('random_seed')
     use_nav2 = LaunchConfiguration('use_nav2')
     map_yaml_file = LaunchConfiguration('map')
     params_file = LaunchConfiguration('params_file')
+    headless = LaunchConfiguration('headless')
+    limit_real_time_factor = LaunchConfiguration('limit_real_time_factor')
+    wait_for_items = LaunchConfiguration('wait_for_items')
 
     declare_map_yaml_cmd = DeclareLaunchArgument(
         'map',
@@ -192,7 +211,12 @@ def generate_launch_description():
     declare_rviz_config_file_cmd = DeclareLaunchArgument(
         'rviz_config',
         default_value=PathJoinSubstitution([FindPackageShare(package_name), 'rviz', 'namespaced.rviz']),
-        description='Full path to the RViz config file to use')    
+        description='Full path to the RViz config file to use')
+    
+    declare_rviz_windows_cmd = DeclareLaunchArgument(
+        'rviz_windows',
+        default_value=PathJoinSubstitution([FindPackageShare(package_name), 'config', 'rviz_windows.yaml']),
+        description='Full path to the RViz windows YAML file to use')        
     
     declare_obstacles_cmd = DeclareLaunchArgument(
         'obstacles',
@@ -214,12 +238,28 @@ def generate_launch_description():
         default_value='False',
         description='Whether to use the navigation stack (Nav2)')
     
+    declare_headless_cmd = DeclareLaunchArgument(
+        'headless',
+        default_value='False',
+        description='Whether to run the Gazebo GUI')
+    
+    declare_limit_real_time_factor_cmd = DeclareLaunchArgument(
+        'limit_real_time_factor',
+        default_value='True',
+        description='Whether to limit the Gazebo real-time factor to 1.0')
+    
+    declare_wait_for_items_cmd = DeclareLaunchArgument(
+        'wait_for_items',
+        default_value='False',
+        description='Whether to wait for every item to spawn before spawning any robots')
+    
     gzserver_cmd = OpaqueFunction(function=gazebo_world)
 
     gzclient_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([pkg_gazebo_ros, 'launch', 'gzclient.launch.py'])
         ),
+        condition=UnlessCondition(headless)
     )
 
     start_tf_relay_cmd = Node(
@@ -239,7 +279,7 @@ def generate_launch_description():
         
     ld = LaunchDescription()
 
-    ld.add_action(SetUseSimTime(True))
+    ld.add_action(SetParameter(name='use_sim_time', value=True))
 
     # Declare the launch options
     ld.add_action(declare_num_robots_cmd)
@@ -248,12 +288,16 @@ def generate_launch_description():
     ld.add_action(declare_sensor_noise_cmd)
     ld.add_action(declare_use_rviz_cmd)
     ld.add_action(declare_rviz_config_file_cmd)
+    ld.add_action(declare_rviz_windows_cmd)
     ld.add_action(declare_obstacles_cmd)
     ld.add_action(declare_item_manager_cmd)
     ld.add_action(declare_random_seed_cmd)
     ld.add_action(declare_use_nav2_cmd)
     ld.add_action(declare_map_yaml_cmd)
     ld.add_action(declare_params_file_cmd)
+    ld.add_action(declare_headless_cmd)
+    ld.add_action(declare_limit_real_time_factor_cmd)
+    ld.add_action(declare_wait_for_items_cmd)    
 
     # Add the commands to the launch description
     ld.add_action(gzserver_cmd)

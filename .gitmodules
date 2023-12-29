@@ -1,0 +1,3 @@
+[submodule "auro_ws/src/auro-practicals"]
+	path = auro_ws/src/auro-practicals
+	url = https://github.com/alanmillard/auro-practicals.git
