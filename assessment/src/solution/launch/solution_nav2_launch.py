@@ -11,7 +11,7 @@ from launch_ros.actions import Node, SetParameter
 
 def generate_launch_description():
 
-    num_robots = 1
+    num_robots = 3
     rviz_config = PathJoinSubstitution([FindPackageShare('assessment'), 'rviz', 'namespaced_nav2.rviz'])
     map = PathJoinSubstitution([FindPackageShare('assessment'), 'maps', 'assessment_world.yaml'])
     params = PathJoinSubstitution([FindPackageShare('assessment'), 'params', 'nav2_params_namespaced.yaml'])
@@ -69,9 +69,9 @@ def generate_launch_description():
         output='screen',
     )
 
-    start_robot_manager = Node(
+    start_nav_manager = Node(
         package='solution',
-        executable='robot_manager',
+        executable='nav_manager',
         output='screen',
     )
 
@@ -91,7 +91,7 @@ def generate_launch_description():
 
     ld.add_action(start_world_item_manager)
 
-    ld.add_action(start_robot_manager)
+    ld.add_action(start_nav_manager)
 
     ld.add_action(TimerAction(period=8.0, actions=robot_controller_cmd))
 

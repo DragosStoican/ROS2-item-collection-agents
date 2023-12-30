@@ -14,18 +14,20 @@ from nav2_simple_commander.robot_navigator import BasicNavigator
 from nav2_simple_commander.costmap_2d import PyCostmap2D
 from rclpy.callback_groups import MutuallyExclusiveCallbackGroup
 from nav_msgs.srv import GetMap
+from geometry_msgs.msg import PoseStamped
 
 
 # Solution Dependencies
 from solution_interfaces.msg import Clusters, WorldItem
 from solution_interfaces.srv import InitialPose
 
-class RobotManager(Node):
+class NavManager(Node):
 
     def __init__(self):
-        super().__init__('robot_manager')
+        super().__init__('nav_manager')
         self.navigator = BasicNavigator()
         self.new_clusters = False # Records wether new clusters were detected since last reevaluation
+        self.clusters = []
 
         # Get initial poses
         yaml_path = os.path.join(get_package_share_directory('assessment'), 'config', 'initial_poses.yaml')
@@ -52,11 +54,11 @@ class RobotManager(Node):
         self.initial_pose_srv = self.create_service(InitialPose, '/initial_pose', self.get_initial_poses)
 
         ## SUBSCRIPTIONS ##
-        # self.clusters_subscriber = self.create_subscription(
-        #     Clusters,
-        #     "/clusters",
-        #     self.clusters_callback,
-        #     10)
+        self.clusters_subscriber = self.create_subscription(
+            Clusters,
+            "/clusters",
+            self.clusters_callback,
+            10)
         
     def send_request(self, client, request):
         future = client.call_async(request)
@@ -64,13 +66,10 @@ class RobotManager(Node):
         return future.result()
         
     def log(self, text):
-        self.get_logger().info(f"[robot_manager]: {text}")
+        self.get_logger().info(f"[nav_manager]: {text}")
     
-    def world_items_callback(self, msg):
-        x_map, y_map = self.map.worldToMap(msg.x, msg.y)
-        if not self.item_on_map(msg.colour, x_map, y_map):
-            self.map_items[msg.colour].append((x_map, y_map))
-            self.updateMap(self.colour)
+    def clusters_callback(self, msg):
+        self.clusters = msg.clusters
     
 
     def get_initial_poses(self, request, response):
@@ -142,7 +141,7 @@ class RobotManager(Node):
 def main(args=None):
     rclpy.init(args=args, signal_handler_options = SignalHandlerOptions.NO)
 
-    node = RobotManager()
+    node = NavManager()
 
     try:
         rclpy.spin(node)

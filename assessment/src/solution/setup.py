@@ -49,7 +49,7 @@ setup(
         'console_scripts': [
             'robot_controller = solution.robot_controller:main',
             'cluster_manager = solution.cluster_manager:main',
-            'robot_manager = solution.robot_manager:main',
+            'nav_manager = solution.nav_manager:main',
             'world_item_manager = solution.world_item_manager:main'
         ],
     },

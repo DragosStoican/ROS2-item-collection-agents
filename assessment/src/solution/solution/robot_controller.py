@@ -70,7 +70,7 @@ class RobotController(Node):
         self.goal = None
         self.map = None
         self.test = True
-        self.colour = None
+        self.colour = "RED"
         self.robots = [] # A list of Robot.msg items describing robots seen through the camera
         client_cb_group = MutuallyExclusiveCallbackGroup()
         timer_cb_group = MutuallyExclusiveCallbackGroup()
@@ -96,6 +96,11 @@ class RobotController(Node):
         self.map = PyCostmap2D(self.occupancy_grid)
         self.empty_map = PyCostmap2D(self.occupancy_grid)
         self.log("Obtained map object")
+        self.maps = {
+            'RED': self.occupancy_grid,
+            'GREEN': self.occupancy_grid,
+            'BLUE': self.occupancy_grid,
+        }
 
         # Set initial pose
         self.initial_pose_req.robot_id = self.get_namespace()[1:]
@@ -128,13 +133,6 @@ class RobotController(Node):
             10,
             callback_group=subscription_cb_roup)
         
-        self.world_item_subscriber = self.create_subscription(
-            WorldItem,
-            "/world_items",
-            self.world_items_callback,
-            10,
-            callback_group=subscription_cb_roup)
-        
         self.clusters_subscriber = self.create_subscription(
             Clusters,
             "/clusters",
@@ -155,13 +153,38 @@ class RobotController(Node):
             self.robots_callback,
             10,
             callback_group=subscription_cb_roup)
+        
+        self.red_map_subscriber = self.create_subscription(
+            OccupancyGrid,
+            "RED",
+            self.red_map_callback,
+            10)
+
+        self.green_map_subscriber = self.create_subscription(
+            OccupancyGrid,
+            "GREEN",
+            self.green_map_callback,
+            10)
+        
+        self.blue_map_subscriber = self.create_subscription(
+            OccupancyGrid,
+            "BLUE",
+            self.blue_map_callback,
+            10)
+        
+        self.robots_subsrcriber = self.create_subscription(
+            RobotList,
+            "robots",
+            self.robots_callback,
+            10,
+            callback_group=subscription_cb_roup)
 
 
         ### PUBLISHERS ###
         self.cmd_vel_publisher = self.create_publisher(Twist, 'cmd_vel', 10, callback_group=publisher_cb_group)
         qos = QoSProfile(durability = QoSDurabilityPolicy.TRANSIENT_LOCAL,
                          depth = 10)
-        self.occupancy_grid_punlisher = self.create_publisher(OccupancyGrid, 'map', qos, callback_group=publisher_cb_group)
+        self.occupancy_grid_publisher = self.create_publisher(OccupancyGrid, 'map', qos, callback_group=publisher_cb_group)
         self.world_item_publisher = self.create_publisher(WorldItem, '/world_items', 10, callback_group=publisher_cb_group)
 
         
@@ -170,6 +193,11 @@ class RobotController(Node):
         self.timer = self.create_timer(self.timer_period, self.control_loop, callback_group=timer_cb_group)
         
 
+    def send_request(self, client, request):
+        future = client.call_async(request)
+        rclpy.spin_until_future_complete(self, future)
+        return future.result()
+    
 
     def odom_callback(self, msg):
         self.pose = msg.pose.pose
@@ -180,12 +208,6 @@ class RobotController(Node):
                                                     self.pose.orientation.w])
         
         self.yaw = yaw
-
-
-    def send_request(self, client, request):
-        future = client.call_async(request)
-        rclpy.spin_until_future_complete(self, future)
-        return future.result()
     
 
     def item_callback(self, msg):
@@ -199,20 +221,36 @@ class RobotController(Node):
 
     def item_holders_callback(self, msg):
         self.item_holders = msg.data
-    
 
-    def world_items_callback(self, msg):
-        x_map, y_map = self.map.worldToMap(msg.x, msg.y)
-        if not self.item_on_map(msg.colour, x_map, y_map):
-            self.map_items[msg.colour].append((x_map, y_map))
-            self.updateMap(self.colour)
 
     def robots_callback(self, msg):
         self.robots = msg.data
     
 
+    def red_map_callback(self, msg):
+        self.log(f"Updating RED MAP!")
+        self.maps["RED"] = msg
+        self.setMap(self.colour)
+
+
+    def green_map_callback(self, msg):
+        self.log(f"Updating GREEN MAP!")
+        self.maps["GREEN"] = msg
+        self.setMap(self.colour)
+
+
+    def blue_map_callback(self, msg):
+        self.log(f"Updating BLUE MAP!")
+        self.maps['BLUE'] = msg
+        self.setMap(self.colour)
+
+
+    def setMap(self, colour):
+        self.occupancy_grid_publisher.publish(self.maps[colour])
+
+
     def evaluate_path(self, path, colour):
-        self.updateMap(colour)
+        self.setMap(colour)
         match colour:
             case "RED":
                 value = 5
@@ -267,41 +305,7 @@ class RobotController(Node):
         self.log(f"New GOAL selected!")
         self.goal = best_goal
         self.colour = best_cluster.colour
-        self.updateMap(self.colour)
-
-
-    def item_on_map(self, colour, x, y) -> bool:
-        """
-        Check weather or not item of colour `colour` at map coordinates [x, y] is on the robot's costmap
-        """
-        for item in self.map_items[colour]:
-            if item[0] == x and item[1] == y:
-                return True
-        return False  
-            
-
-    def updateMap(self, colour):
-        """
-        Updates the costmap, omitting items of colour `colour`
-        """
-        old_map = np.copy(self.map.costmap)
-        self.map.costmap = np.copy(self.empty_map.costmap)
-
-        # Add all items from map_items to the new costmap
-        items_to_add = []
-
-        for c, coords in self.map_items.items():
-            if c != colour:
-                items_to_add.extend(coords)
-
-        for item in items_to_add:
-            self.map.setCost(item[0], item[1], 100)
-
-        if not np.array_equal(old_map, self.map.costmap):
-            new_grid = array('b', self.map.costmap)
-            self.occupancy_grid.data = new_grid
-            # self.log("Updating MAP!")
-            self.occupancy_grid_punlisher.publish(self.occupancy_grid)
+        self.setMap(self.colour)
 
     
     def log(self, text):
@@ -327,8 +331,7 @@ class RobotController(Node):
                 world_item.y = self.pose.position.y + dy
                 world_item.colour = item.colour
                 x_map, y_map = self.map.worldToMap(world_item.x, world_item.y)
-                if not self.item_on_map(world_item.colour, x_map, y_map):
-                    self.world_item_publisher.publish(world_item)
+                self.world_item_publisher.publish(world_item)
 
 
     def has_item(self):

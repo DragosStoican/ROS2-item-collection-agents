@@ -105,7 +105,6 @@ class WorldItemManager(Node):
         for map in to_update:
             if not map.has_item(x_map, y_map):
                 map.add_item(x_map, y_map)
-                self.log(f"Updating {msg.colour} MAP!")
                 map.update()
 
 
