@@ -320,6 +320,7 @@ class RobotController(Node):
         if self.pose is None:
             return
         for i, item in enumerate(self.items):
+            
             if math.fabs(item.x) < MAX_ANGLE_READING and item.diameter >= MIN_ITEM_DIAMETER_READING and item.diameter <= MAX_ITEM_DIAMETER_READING:
                 distance = self.get_distance_to_item(item.diameter)
                 angle = math.degrees(self.yaw) + item.x * ANGLE_COEF
@@ -330,6 +331,8 @@ class RobotController(Node):
                 world_item.y = self.pose.position.y + dy
                 world_item.colour = item.colour
                 x_map, y_map = self.map.worldToMap(world_item.x, world_item.y)
+                # self.log(f"Publishing item at location {world_item.x} {world_item.y} FROM \r\n diameter: {item.diameter} x: {item.x}")
+                # self.log(f"Publishing item at location {world_item.x} {world_item.y} FROM \r\n diameter: {item.diameter} x: {item.x} pose: {self.pose.position.x} {self.pose.position.y}")
                 self.world_item_publisher.publish(world_item)
 
 
@@ -363,8 +366,8 @@ class RobotController(Node):
         
         match self.state:
             case State.SPAWN:
-                # if self.time_alive > 1:
-                self.state = State.EVALUATE
+                if self.time_alive > 1:
+                    self.state = State.EVALUATE
             
             case State.EVALUATE:
                 self.log("Evaluating clusters:")
@@ -388,6 +391,12 @@ class RobotController(Node):
                     self.log("Going into PICKUP state")
                     self.navigator.cancelTask()
                     self.state = State.PICKUP
+                elif self.navigator.isTaskComplete():
+                    msg = Twist()
+                    msg.angular.z = 1.0
+                    self.cmd_vel_publisher.publish
+                # if self.navigator.isTaskComplete() and self.get_closest_item() is None:
+
 
             case State.PICKUP:
                 msg = Twist()

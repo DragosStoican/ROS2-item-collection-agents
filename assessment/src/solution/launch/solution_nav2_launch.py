@@ -10,11 +10,12 @@ from launch_ros.substitutions import FindPackageShare
 from launch_ros.actions import Node, SetParameter
 
 def generate_launch_description():
-
+    package_name = 'solution'
     num_robots = 3
     rviz_config = PathJoinSubstitution([FindPackageShare('assessment'), 'rviz', 'namespaced_nav2.rviz'])
     map = PathJoinSubstitution([FindPackageShare('assessment'), 'maps', 'assessment_world.yaml'])
-    params = PathJoinSubstitution([FindPackageShare('assessment'), 'params', 'nav2_params_namespaced.yaml'])
+    # params = PathJoinSubstitution([FindPackageShare('assessment'), 'params', 'nav2_params_namespaced.yaml'])
+    params = PathJoinSubstitution([FindPackageShare(package_name), 'params', 'custom_nav2_params_namespaced.yaml'])
 
     yaml_path = os.path.join(get_package_share_directory('assessment'), 'config', 'initial_poses.yaml')
 
