@@ -78,7 +78,7 @@ class ClusterManager(Node):
             clusters.clusters.extend(sublist)
 
         for item in clusters.clusters:
-            self.get_logger().info(f"Marking {item}")
+            self.log(f"Marking {item}")
             marker_array.markers.append(self.mark_cluster(id, item))
             id += 1
         
@@ -92,7 +92,7 @@ class ClusterManager(Node):
             self.clusters[colour].append(world_item)
 
         elif self.euclidean_distance(self.clusters[colour][0], world_item) > \
-             self.euclidean_distance(self.clusters[colour][0], self.clusters[colour][1]):
+             self.euclidean_distance(self.clusters[colour][0], self.clusters[colour][1]) + 0.01:
                 self.clusters[colour][1] = world_item
         else:
             return
@@ -103,6 +103,9 @@ class ClusterManager(Node):
         
     def euclidean_distance(self, c1: WorldItem, c2: WorldItem):
         return math.sqrt((c1.x - c2.x)**2 + (c1.y - c2.y)**2)
+    
+    def log(self, text):
+        self.get_logger().info(f"[{self.get_namespace()}]: {text}")
     
 
     # def get_clusters_callback(self, request, response):

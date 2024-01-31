@@ -26,9 +26,6 @@ class NavManager(Node):
 
     def __init__(self):
         super().__init__('nav_manager')
-        self.navigator = BasicNavigator()
-        self.new_clusters = False # Records wether new clusters were detected since last reevaluation
-        self.clusters = []
 
         # Get initial poses
         yaml_path = os.path.join(get_package_share_directory('assessment'), 'config', 'initial_poses.yaml')
@@ -43,117 +40,24 @@ class NavManager(Node):
         self.map_req = GetMap.Request()
         self.log("Connected to map service")
 
-        # Get the costmap object
-        response = self.send_request(self.map_cli, self.map_req)
-        self.occupancy_grid = response.map
-        self.map = PyCostmap2D(self.occupancy_grid)
-        self.empty_map = PyCostmap2D(self.occupancy_grid)
-        self.log("Obtained map object")
-
-
         # Services
         self.initial_pose_srv = self.create_service(InitialPose, '/initial_pose', self.get_initial_poses)
 
-        ## SUBSCRIPTIONS ##
-        self.clusters_subscriber = self.create_subscription(
-            Clusters,
-            "/clusters",
-            self.clusters_callback,
-            10)
-        
-        # self.red_map_subscriber = self.create_subscription(
-        #     OccupancyGrid,
-        #     "/RED",
-        #     self.red_map_callback,
-        #     10)
-
-        # self.green_map_subscriber = self.create_subscription(
-        #     OccupancyGrid,
-        #     "/GREEN",
-        #     self.green_map_callback,
-        #     10)
-        
-        # self.blue_map_subscriber = self.create_subscription(
-        #     OccupancyGrid,
-        #     "/BLUE",
-        #     self.blue_map_callback,
-        #     10)
         
     def send_request(self, client, request):
         future = client.call_async(request)
         rclpy.spin_until_future_complete(self, future)
         return future.result()
-        
-    def log(self, text):
-        self.get_logger().info(f"[nav_manager]: {text}")
-    
-    def clusters_callback(self, msg):
-        self.clusters = msg.clusters
     
 
     def get_initial_poses(self, request, response):
         response.x = self.initial_poses[request.robot_id]['x']
         response.y = self.initial_poses[request.robot_id]['y']
         return response
-
-
-    # def evaluate_path(self, path, colour):
-    #     self.updateMap(colour)
-    #     match colour:
-    #         case "RED":
-    #             value = 5
-    #         case "GREEN":
-    #             value = 10
-    #         case "BLUE":
-    #             value = 15
-        
-    #     distance = 0
-    #     for i in range(len(path.poses) - 1):
-    #         position_a_x = path.poses[i].pose.position.x
-    #         position_b_x = path.poses[i+1].pose.position.x
-    #         position_a_y = path.poses[i].pose.position.y
-    #         position_b_y = path.poses[i+1].pose.position.y
-
-    #         distance += np.sqrt(np.power((position_b_x - position_a_x), 2) + np.power((position_b_y- position_a_y), 2))
-        
-    #     return value / distance
-
     
-    # def evaluate(self):
-    #     if self.clusters == []:
-    #         return
 
-    #     best_value = None
-    #     best_cluster = None
-    #     best_goal = None
-    #     # iterate through the clusters to find the best one
-        
-    #     for cluster in self.clusters:
-    #         goal_pose = PoseStamped()
-    #         goal_pose.header.frame_id = 'map'
-    #         goal_pose.header.stamp = self.get_clock().now().to_msg()
-    #         goal_pose.pose.position.x = cluster.x
-    #         goal_pose.pose.position.y = cluster.y
-    #         goal_pose.pose.orientation.z = 0.0
-    #         goal_pose.pose.orientation.w = 1.0
-
-    #         # best_cluster = cluster
-    #         # best_goal = goal_pose
-    #         # break
-
-    #         path = self.navigator.getPath(self.initial_pose, goal_pose)
-    #         value = self.evaluate_path(path, cluster.colour)
-    #         if best_value is None or value > best_value:
-    #             best_value = value
-    #             best_cluster = cluster
-    #             best_goal = goal_pose
-
-    #     self.new_clusters = False
-    
-    #     self.log(f"New GOAL selected!")
-    #     self.goal = best_goal
-    #     self.colour = best_cluster.colour
-    #     self.updateMap(self.colour)
+    def log(self, text):
+        self.get_logger().info(f"[nav_manager]: {text}")
 
 
 

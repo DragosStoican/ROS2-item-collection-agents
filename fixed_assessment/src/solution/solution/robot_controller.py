@@ -7,6 +7,7 @@ from array import array
 import os
 from ament_index_python.packages import get_package_share_directory
 import yaml
+import random
 
 # ROS2 packages
 import rclpy
@@ -23,7 +24,7 @@ from nav_msgs.msg import OccupancyGrid, Odometry
 from nav_msgs.srv import GetMap
 
 # Assessment dependencies
-from assessment_interfaces.msg import ItemList, ItemHolders, RobotList
+from assessment_interfaces.msg import ItemList, ItemHolders, RobotList, HomeZone
 
 # Solution Dependencies
 from solution_interfaces.msg import WorldItem, Clusters
@@ -42,7 +43,7 @@ CAMERA_FOCAL_DISTANCE = 540
 BALL_DIAMETER = 0.15
 MIN_ITEM_DIAMETER_READING = 20
 MAX_ITEM_DIAMETER_READING = 200
-CLOSE_ITEM_THRESHOLD = 200
+CLOSE_ITEM_THRESHOLD = 135
 # MIN_DISTANCE = 0.26
 # MAX_DISTANCE = 4.18
 MAX_ANGLE_READING = 170
@@ -60,18 +61,15 @@ class RobotController(Node):
         self.navigator = BasicNavigator()
         self.items = []
         self.item_holders = []
-        self.map_items = { # Dict of item map coordinates
-            'RED': [],
-            'GREEN': [],
-            'BLUE': [],
-        }
         self.clusters = []
+        self.taken_clusters = []
         self.new_clusters = False # Records wether new clusters were detected since last reevaluation
         self.goal = None
+        self.current_cluster = None
         self.map = None
-        self.test = True
         self.colour = "RED"
         self.robots = [] # A list of Robot.msg items describing robots seen through the camera
+        self.home_zone = None # The reading from the home_zone topic
         client_cb_group = MutuallyExclusiveCallbackGroup()
         timer_cb_group = MutuallyExclusiveCallbackGroup()
         subscription_cb_roup = MutuallyExclusiveCallbackGroup()
@@ -94,7 +92,6 @@ class RobotController(Node):
         response = self.send_request(self.map_cli, self.map_req)
         self.occupancy_grid = response.map
         self.map = PyCostmap2D(self.occupancy_grid)
-        self.empty_map = PyCostmap2D(self.occupancy_grid)
         self.log("Obtained map object")
         self.maps = {
             'RED': self.occupancy_grid,
@@ -147,6 +144,27 @@ class RobotController(Node):
             10,
             callback_group=subscription_cb_roup)
         
+        self.red_map_subscriber = self.create_subscription(
+            OccupancyGrid,
+            "/RED",
+            self.red_map_callback,
+            10,
+            callback_group=subscription_cb_roup)
+
+        self.green_map_subscriber = self.create_subscription(
+            OccupancyGrid,
+            "/GREEN",
+            self.green_map_callback,
+            10,
+            callback_group=subscription_cb_roup)
+        
+        self.blue_map_subscriber = self.create_subscription(
+            OccupancyGrid,
+            "/BLUE",
+            self.blue_map_callback,
+            10,
+            callback_group=subscription_cb_roup)
+        
         self.robots_subsrcriber = self.create_subscription(
             RobotList,
             "robots",
@@ -154,28 +172,10 @@ class RobotController(Node):
             10,
             callback_group=subscription_cb_roup)
         
-        self.red_map_subscriber = self.create_subscription(
-            OccupancyGrid,
-            "/RED",
-            self.red_map_callback,
-            10)
-
-        self.green_map_subscriber = self.create_subscription(
-            OccupancyGrid,
-            "/GREEN",
-            self.green_map_callback,
-            10)
-        
-        self.blue_map_subscriber = self.create_subscription(
-            OccupancyGrid,
-            "/BLUE",
-            self.blue_map_callback,
-            10)
-        
-        self.robots_subsrcriber = self.create_subscription(
-            RobotList,
-            "robots",
-            self.robots_callback,
+        self.home_zone_subsrcriber = self.create_subscription(
+            HomeZone,
+            "home_zone",
+            self.home_zone_callback,
             10,
             callback_group=subscription_cb_roup)
 
@@ -189,6 +189,7 @@ class RobotController(Node):
 
         
         self.time_alive = 0
+        self.last_reeval = 0
         self.timer_period = 0.1 # 100 milliseconds = 10 Hz
         self.timer = self.create_timer(self.timer_period, self.control_loop, callback_group=timer_cb_group)
         
@@ -225,24 +226,23 @@ class RobotController(Node):
 
     def robots_callback(self, msg):
         self.robots = msg.data
-    
+
+    def home_zone_callback(self, msg):
+        self.home_zone = msg
 
     def red_map_callback(self, msg):
-        self.log(f"Updating RED MAP!")
         self.maps["RED"] = msg
         if self.colour == "RED":
             self.setMap(self.colour)
 
 
     def green_map_callback(self, msg):
-        self.log(f"Updating GREEN MAP!")
         self.maps["GREEN"] = msg
         if self.colour == "GREEN":
             self.setMap(self.colour)
 
 
     def blue_map_callback(self, msg):
-        self.log(f"Updating BLUE MAP!")
         self.maps['BLUE'] = msg
         if self.colour == "BLUE":
             self.setMap(self.colour)
@@ -252,8 +252,7 @@ class RobotController(Node):
         self.occupancy_grid_publisher.publish(self.maps[colour])
 
 
-    def evaluate_path(self, path, colour):
-        self.setMap(colour)
+    def evaluate_path(self, path, colour, bonus):
         match colour:
             case "RED":
                 value = 5
@@ -261,6 +260,8 @@ class RobotController(Node):
                 value = 10
             case "BLUE":
                 value = 15
+
+        value += bonus
         
         distance = 0
         for i in range(len(path.poses) - 1):
@@ -275,6 +276,7 @@ class RobotController(Node):
 
     
     def evaluate(self):
+        self.log(f"Evaluating with {len(self.taken_clusters)} taken clusters out of {len(self.clusters)} clusters")
         if self.clusters == []:
             return
 
@@ -284,6 +286,10 @@ class RobotController(Node):
         # iterate through the clusters to find the best one
         
         for cluster in self.clusters:
+            if any(math.isclose(cluster.x, c.x, abs_tol=0.1) and math.isclose(cluster.y, c.y, abs_tol=0.1) for c in self.taken_clusters):
+                self.log("Ignoring taken cluster")
+                continue
+            # If this cluster is taken, ignore it
             goal_pose = PoseStamped()
             goal_pose.header.frame_id = 'map'
             goal_pose.header.stamp = self.get_clock().now().to_msg()
@@ -292,8 +298,21 @@ class RobotController(Node):
             goal_pose.pose.orientation.z = 0.0
             goal_pose.pose.orientation.w = 1.0
 
+            start_pose = PoseStamped()
+            start_pose.header.frame_id = 'map'
+            start_pose.header.stamp = self.get_clock().now().to_msg()
+            start_pose.pose = self.pose
+
+            self.setMap(cluster.colour)
             path = self.navigator.getPath(self.initial_pose, goal_pose)
-            value = self.evaluate_path(path, cluster.colour)
+
+            # Promote clusters that are far on the "x" axis
+            bonus = math.fabs((self.initial_pose.pose.position.x - goal_pose.pose.position.x))
+            # Calculate penalties to encourage robots to "stay in their lane"
+            bonus += (-2) * math.fabs((self.initial_pose.pose.position.y - goal_pose.pose.position.y))
+
+            value = self.evaluate_path(path, cluster.colour, bonus)
+
             if best_value is None or value > best_value:
                 best_value = value
                 best_cluster = cluster
@@ -303,6 +322,8 @@ class RobotController(Node):
     
         self.log(f"New GOAL selected!")
         self.goal = best_goal
+        self.current_cluster = best_cluster
+        ## Added noise to reduce chances of robots coliding with eachother
         self.colour = best_cluster.colour
         self.setMap(self.colour)
 
@@ -317,7 +338,7 @@ class RobotController(Node):
 
 
     def publish_items(self):
-        if self.pose is None:
+        if self.pose is None or self.robots != []:
             return
         for i, item in enumerate(self.items):
             
@@ -330,9 +351,6 @@ class RobotController(Node):
                 world_item.x = self.pose.position.x + dx
                 world_item.y = self.pose.position.y + dy
                 world_item.colour = item.colour
-                x_map, y_map = self.map.worldToMap(world_item.x, world_item.y)
-                # self.log(f"Publishing item at location {world_item.x} {world_item.y} FROM \r\n diameter: {item.diameter} x: {item.x}")
-                # self.log(f"Publishing item at location {world_item.x} {world_item.y} FROM \r\n diameter: {item.diameter} x: {item.x} pose: {self.pose.position.x} {self.pose.position.y}")
                 self.world_item_publisher.publish(world_item)
 
 
@@ -367,13 +385,13 @@ class RobotController(Node):
         match self.state:
             case State.SPAWN:
                 if self.time_alive > 1:
+                    self.log("Going into EVALUATE state")
                     self.state = State.EVALUATE
             
             case State.EVALUATE:
-                self.log("Evaluating clusters:")
-                if self.new_clusters:
-                    self.evaluate()
+                self.evaluate()
                 if self.goal is not None:
+                    self.log("Going into SET_GOAL state")
                     self.state = State.SET_GOAL
 
             case State.SET_GOAL:
@@ -383,18 +401,22 @@ class RobotController(Node):
                     self.state = State.NAVIGATE
 
             case State.NAVIGATE:
-                # if self.robots != []:
-                #     msg = Twist()
-                #     msg.angular.z = self.robots[0].x / 320 * (-3)
-                #     self.cmd_vel_publisher.publish(msg)
-                if self.get_closest_item() is not None and self.robots == []:
+                if any(r.size > 0.009 and math.fabs(r.x) < 150 for r in self.robots) and self.time_alive - self.last_reeval > 5:
+                    self.last_reeval = self.time_alive
+                    self.log(self.robots[0].x)
+                    self.log("Found robot potentially heading into the same direction. Reevaluating")
+                    self.taken_clusters.append(self.current_cluster)
+                    self.state = State.EVALUATE
+
+                elif self.get_closest_item() is not None:
                     self.log("Going into PICKUP state")
                     self.navigator.cancelTask()
                     self.state = State.PICKUP
+
                 elif self.navigator.isTaskComplete():
                     msg = Twist()
-                    msg.angular.z = 1.0
-                    self.cmd_vel_publisher.publish
+                    msg.angular.z = -0.8
+                    self.cmd_vel_publisher.publish(msg)
                 # if self.navigator.isTaskComplete() and self.get_closest_item() is None:
 
 
@@ -405,22 +427,30 @@ class RobotController(Node):
                     msg.linear.x = 0.5
                 elif math.fabs(closest_item.x) > 25:
                     msg.linear.x = 0.1 # This stops the robot from getting stuck on choosing between 2 equally close objects
-                    msg.angular.z = closest_item.x / 320.0 * (0.8)
+                    msg.angular.z = closest_item.x / 320.0 * 0.8
                 else:
-                    msg.linear.x = 0.5
-                
-                if self.robots != []:
-                    # msg.angular.z = self.robots[0].x / 320 * (-2)
-                    self.state = State.SET_GOAL
+                    msg.linear.x = 1.0
                     
                 self.cmd_vel_publisher.publish(msg)
 
             case State.RETURN:
+                # if any(r.size > 0.5 for r in self.robots):
+                #         self.log("Another robot encountered")
+                #         self.taken_clusters.append(self.current_cluster)
+
                 if not self.has_item():
                     self.log("Going into EVALUATE state")
                     self.navigator.cancelTask()
                     self.state = State.EVALUATE
 
+                # elif self.navigator.isTaskComplete():
+                #     self.log("Going into EVALUATE state")
+                #     self.state = State.EVALUATE
+                # if self.home_zone is not None and self.home_zone.visible and self.home_zone.size > 0.7 and self.robots == []:
+                #     msg = Twist()
+                #     msg.angular.z = self.home_zone.x / 320.0 * 2.0
+                #     self.cmd_vel_publisher.publish(msg)
+                #     # self.navigator.cancelTask()
                         
 
     def destroy_node(self):
