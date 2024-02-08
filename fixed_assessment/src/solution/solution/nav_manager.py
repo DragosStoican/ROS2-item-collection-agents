@@ -15,7 +15,7 @@ from nav_msgs.srv import GetMap
 # Solution Dependencies
 from solution_interfaces.srv import InitialPose
 
-NUM_ROBOTS = 1
+NUM_ROBOTS = 3
 
 class NavManager(Node):
 
